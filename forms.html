@@ -1,3 +1,26 @@
+<script>
+// cambiar cual es el último paso en función del check de ofertas
+  $(document).ready(function() {
+  // cambiar el texto del botón
+  	$( "#oferta" ).change(function() {
+      var x = document.getElementById("next3");
+      alert(x.innerHTML)
+  		if ((x.innerHTML === "Finalizar<br>‍") || (x.innerHTML === "Finalizar<br>")) {
+    		x.innerHTML = "Continuar<br>";
+  		} else {
+    		x.innerHTML = "Finalizar<br>";
+  		}    	
+    });
+    
+    $('#next3').on('click', function(e) {
+    	if( !($('#oferta').prop('checked'))) {
+    		$("#form-generico").submit();
+			}
+    });
+  	
+  });
+</script>
+
 <!--para evitar que los dropdowns de los forms tengan una opción por defecto-->
 <script>
   $( document ).ready(function() {
