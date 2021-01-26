@@ -7,8 +7,14 @@
    });
 </script>
 
-<!--para que los forms tengan validación en el primer paso y salgan warnings-->
-<!--script src="c"></script-->
+<script>
+$(document).ready(function() {
+    $( '#modelo' ).change(function() {
+          if( $('#marca').val()==="SEAT") {
+            $("#modelo").hide();
+          }
+ 	});
+</script>
 
 <script>
 /**
@@ -16,6 +22,11 @@
  * MIT License © Alex Iglesias - https://brota.me.
  */
 
+  /**
+  * Editado 26/01/2021
+  * Paloma Ortín
+  * 
+  */
 class MSF {
   constructor(data) {
     this.currentStep = 0;
