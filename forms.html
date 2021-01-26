@@ -8,14 +8,22 @@
 </script>
 
 <script>
-$(document).ready(function() {
-  var modelo = document.getElementById(data.modelo)
-    $( '#modelo' ).change(function() {
+  //selectores dinámicos por marcas
+  $(document).ready(function() {
+    $( "#marca" ).change(function() {
           if( $('#marca').val()==="SEAT") {
-            //$("#modelo").hide();
-            modelo.classList.remove("hidden")
+            var modelo = document.getElementById("modelo");
+            //borra las opciones anteriores
+            var length = modelo.options.length;
+            for (i = length-1; i >= 0; i--) {
+              modelo.options[i] = null;
+            }
+            // añade las opciones de Seat
+            $("#modelo").append(new Option("Ateca", "Ateca"));
+			      $("#modelo").append(new Option("Leon", "Leon"));
           }
- 	});
+	  });
+  });
 </script>
 
 <script>
