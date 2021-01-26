@@ -11,7 +11,7 @@
   //selectores dinámicos por marcas
   $(document).ready(function() {
     $( "#marca" ).change(function() {
-	    if( $('#marca').val()==="Seat") {
+	    if( $('#marca').val()==="SEAT") {
 		    
 		    alert( "Has elegido SEAT" );
 		    
@@ -40,6 +40,7 @@
 		    // añade las opciones de Seat
 		    $("#modelo").append(new Option("Sandero", "Sandero"));
 		    $("#modelo").append(new Option("Duster", "Duster"));
+	    }
     });
   });
 </script>
