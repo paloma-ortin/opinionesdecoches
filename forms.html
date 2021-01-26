@@ -36,7 +36,6 @@
 		$( "#marca" ).change(function() {
 			switch($('#marca').val()) {
 				case "Seat":
-					alert('Elijo Seat')
 					var modelo = document.getElementById("modelo");
 		    			//borra las opciones anteriores
 		    			var length = modelo.options.length;
@@ -48,9 +47,6 @@
 		    			// añade las opciones de Seat
 		    			$("#modelo").append(new Option("Ateca", "Ateca"));
 		    			$("#modelo").append(new Option("Leon", "Leon"));
-					var mod = document.getElementById("modelo")
-					alert("ok")
-					alert(mod.value)
           				break;
           
         			case "Dacia":
