@@ -80,43 +80,7 @@
 		});
 	});
 </script>
-<!--script>
-  //selectores dinámicos por marcas
-  $(document).ready(function() {
-    $( "#marca" ).change(function() {
-	    if( $('#marca').val()==="SEAT") {
-		    
-		    alert( "Has elegido SEAT" );
-		    
-		    var modelo = document.getElementById("modelo");
-		    //borra las opciones anteriores
-		    var length = modelo.options.length;
-		    for (i = length-1; i >= 0; i--) {
-			    modelo.options[i] = null;
-		    }
-		    $("#modelo").append(new Option("Elige un modelo", null));
-		    // añade las opciones de Seat
-		    $("#modelo").append(new Option("Ateca", "Ateca"));
-		    $("#modelo").append(new Option("Leon", "Leon"));
-		    
-	    }else if( $('#marca').val()==="Dacia"){
-		    
-		    alert( "Has elegido DACIA" );
-		    
-		    var modelo = document.getElementById("modelo");
-		    //borra las opciones anteriores
-		    var length = modelo.options.length;
-		    for (i = length-1; i >= 0; i--) {
-			    modelo.options[i] = null;
-		    }
-		    $("#modelo").append(new Option("Elige un modelo", null));
-		    // añade las opciones de Seat
-		    $("#modelo").append(new Option("Sandero", "Sandero"));
-		    $("#modelo").append(new Option("Duster", "Duster"));
-	    }
-    });
-  });
-</script-->
+
 
 <script>
 /**
@@ -155,7 +119,7 @@ class MSF {
     this.nextText = data.nextButtonText;
     this.submitText = data.submitButtonText;
     this.warningClass = data.warningClass;
-    this.alertText = data.alertText;
+    //this.alertText = data.alertText;
     // editar en función del número de pasos
     if (data.alertElementID1) {
       this.alertElement1 = document.getElementById(data.alertElementID1);
@@ -243,9 +207,9 @@ class MSF {
   }
 
   showAlert() {
-    if (this.alertText) {
+    /*if (this.alertText) {
       alert(this.alertText);
-    }
+    }*/
 
     if (this.alertElement1) {
       this.alertElement1.classList.remove("hidden");
