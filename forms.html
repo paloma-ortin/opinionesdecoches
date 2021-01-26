@@ -9,9 +9,11 @@
 
 <script>
 $(document).ready(function() {
+  var modelo = document.getElementById(data.modelo)
     $( '#modelo' ).change(function() {
           if( $('#marca').val()==="SEAT") {
-            $("#modelo").hide();
+            //$("#modelo").hide();
+            modelo.classList.remove("hidden")
           }
  	});
 </script>
