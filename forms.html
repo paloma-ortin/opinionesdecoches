@@ -7,6 +7,59 @@
    });
 </script>
 
+<script>
+  //selectores dinámicos por marcas
+  $(document).ready(function() {
+    $( "#marca" ).change(function() {
+    	switch($('#marca').val()) {
+      	
+        case "Seat":
+          var modelo = document.getElementById("modelo");
+		    	//borra las opciones anteriores
+		    	var length = modelo.options.length;
+		    	for (i = length-1; i >= 0; i--) {
+			    	modelo.options[i] = null;
+		    	}
+		    	$("#modelo").append(new Option("Elige un modelo", null));
+        	$("#modelo").children('option:first').attr("disabled", "disabled");
+		    	// añade las opciones de Seat
+		    	$("#modelo").append(new Option("Ateca", "Ateca"));
+		    	$("#modelo").append(new Option("Leon", "Leon"));
+          break;
+          
+        case "Dacia":
+         	var modelo = document.getElementById("modelo");
+		    	//borra las opciones anteriores
+		    	var length = modelo.options.length;
+		    	for (i = length-1; i >= 0; i--) {
+			    	modelo.options[i] = null;
+		    	}
+		    	$("#modelo").append(new Option("Elige un modelo", null));
+        	$("#modelo").children('option:first').attr("disabled", "disabled");
+		    	// añade las opciones de Dacia
+		    	$("#modelo").append(new Option("Sandero", "Sandero"));
+		    	$("#modelo").append(new Option("Duster", "Duster"));
+          break;
+          
+         case "Renault":
+         	var modelo = document.getElementById("modelo");
+		    	//borra las opciones anteriores
+		    	var length = modelo.options.length;
+		    	for (i = length-1; i >= 0; i--) {
+			    	modelo.options[i] = null;
+		    	}
+		    	$("#modelo").append(new Option("Elige un modelo", null));
+        	$("#modelo").children('option:first').attr("disabled", "disabled");
+		    	// añade las opciones de Dacia
+		    	$("#modelo").append(new Option("Mégane", "Megane"));
+		    	$("#modelo").append(new Option("Captur", "Captur"));
+          $("#modelo").append(new Option("Zoe", "Zoe"));
+          break;
+      }
+    
+    });
+  });
+</script>
 <!--script>
   //selectores dinámicos por marcas
   $(document).ready(function() {
