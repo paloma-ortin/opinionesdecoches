@@ -12,6 +12,9 @@
   $(document).ready(function() {
     $( "#marca" ).change(function() {
 	    if( $('#marca').val()==="Seat") {
+		    
+		    alert( "Has elegido SEAT" );
+		    
 		    var modelo = document.getElementById("modelo");
 		    //borra las opciones anteriores
 		    var length = modelo.options.length;
@@ -22,7 +25,11 @@
 		    // añade las opciones de Seat
 		    $("#modelo").append(new Option("Ateca", "Ateca"));
 		    $("#modelo").append(new Option("Leon", "Leon"));
+		    
 	    }else if( $('#marca').val()==="Dacia"){
+		    
+		    alert( "Has elegido DACIA" );
+		    
 		    var modelo = document.getElementById("modelo");
 		    //borra las opciones anteriores
 		    var length = modelo.options.length;
