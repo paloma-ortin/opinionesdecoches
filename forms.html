@@ -126,13 +126,12 @@ class MSF {
     if (data.alertElementID4) {
       this.alertElement4 = document.getElementById(data.alertElementID4);
     }
-    //-----------------------------------------
+    //---aquí está entrando bien----------------------------
     if (data.hiddenFormID) {
       this.hiddenForm = document.getElementById(data.hiddenFormID);
       this.hiddenSubmitButton = this.hiddenForm.querySelector(
         'input[type="submit"]'
       );
-	    if(this.hiddenForm){alert("Hay un hidden form")}
     }
   }
 
@@ -279,14 +278,11 @@ const msfController = {
       msf.back3.addEventListener("click", backClick);
       msf.back4.addEventListener("click", backClick);
       //-----------------------------------------
-	    alert("Antes de entrar");
-      if (msf.hiddenForm) {
-	      alert("Está entrando");
 	      // cuando se haga click en el tercer paso
 	       msf.next3.addEventListener(
 		       "click",
 		       () => {
-			       
+			       alert("envío de form")
 			       msf.submitHiddenForm(0);
 		       },
 		       {
@@ -417,7 +413,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 15")
+		alert("edit 3")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
