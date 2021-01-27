@@ -134,11 +134,6 @@ class MSF {
       );
     }
   }
-  pasonext3() {
-	  alert("paso next 3");
-	  //this.submitHiddenForm(0);
-	  //this.nextClick();
-  }
 
   getInputs(index) {
     const inputs = this.steps[index].querySelectorAll(
@@ -282,7 +277,7 @@ const msfController = {
 	   	    
 	    msf.next1.addEventListener("click", nextClick);
 	    msf.next2.addEventListener("click", nextClick);
-	    msf.next3.addEventListener("click", pasonext3);
+	    msf.next3.addEventListener("click", nextClick3);
 	    msf.next4.addEventListener("click", nextClick);
       
 	    msf.back2.addEventListener("click", backClick);
@@ -324,6 +319,29 @@ const msfController = {
         msf.showAlert();
       }
     };
+	  
+	  const nextClick3 = () => {
+      		const filledFields = checkRequiredInputs(msf.currentStep);
+
+      		if (filledFields) {
+       			 msf.setConfirmValues(msf.currentStep);
+			 // esto es lo único diferente con nextClick
+			 msf.submitHiddenForm(0)
+       			 msf.currentStep++;
+       			 if (msf.currentStep === msf.steps.length) {
+         			msf.submitForm();
+          			msf.hideButtons();
+         			msf.hideAlert();
+      			 } else {
+       				msf.goNext();
+          			msf.setMaskHeight();
+          			//msf.setNextButtonText();
+          			msf.hideAlert();
+        		}
+      		} else {
+        		msf.showAlert();
+      		}
+    	};
 
     const backClick = () => {
       const previousStep = msf.currentStep - 1;
@@ -415,7 +433,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 13")
+		alert("edit 14")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
