@@ -2,23 +2,23 @@
 // cambiar cual es el último paso (3 o 4) en función del check de ofertas
   $(document).ready(function() {
   // cambiar el texto del botón
-  	$( "#oferta" ).change(function() {
-      var x = document.getElementById("next3");
-  		if ((x.innerHTML === "Finalizar<br>‍") || (x.innerHTML === "Finalizar<br>")) {
-    		x.innerHTML = "Continuar<br>";
-  		} else {
-    		x.innerHTML = "Finalizar<br>";
-  		}    	
-    });
-    alert("pre click")
-    $('#next3').on('click', function(e) {
-	    alert("post click, pre disable")
-	    window.alert = function() {};
-	    alert("post disable")
-	    if( !($('#oferta').prop('checked'))) {
-		    $("#form-generico").submit();
-	    }
-    });
+	  $( "#oferta" ).change(function() {
+		  var x = document.getElementById("next3");
+		  if ((x.innerHTML === "Finalizar<br>‍") || (x.innerHTML === "Finalizar<br>")) {
+			  x.innerHTML = "Continuar<br>";
+		  } else {
+			  x.innerHTML = "Finalizar<br>";
+		  }    	
+	  });
+    	alert("pre click")
+    	$('#next3').on('click', function(e) {
+		alert("post click, pre disable")
+	    	window.alert = function() {};
+	    	alert("post disable")
+	    	if( !($('#oferta').prop('checked'))) {
+			$("#form-generico").submit();
+	   	 }
+	});
   	
   });
 </script>
