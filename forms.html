@@ -170,18 +170,18 @@ class MSF {
 
   submitHiddenForm(index) {
 	  alert("Aquí entra");
-    const inputs = this.getInputs(index);
+	  /*const inputs = this.getInputs(index);
 
-    inputs.forEach((el) => {
-	    alert("Aquí también");
-      const hiddenInput = document.getElementById(`hidden-${el.id}`);
+	  inputs.forEach((el) => {
+		  alert("Aquí también");
+		  const hiddenInput = document.getElementById(`hidden-${el.id}`);
 
-      if (hiddenInput) {
-        hiddenInput.value = el.value;
-      }
-    });
+		  if (hiddenInput) {
+			  hiddenInput.value = el.value;
+		  }
+	  });
 
-    this.hiddenSubmitButton.click();
+	  this.hiddenSubmitButton.click();*/
   }
 
   hideButtons() {
@@ -407,7 +407,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 6")
+		alert("edit 7")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
