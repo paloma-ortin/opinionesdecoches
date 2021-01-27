@@ -168,7 +168,7 @@ class MSF {
     this.submitButton.click();
   }
 
-  /*submitHiddenForm(index) {
+  submitHiddenForm(index) {
 	  const inputs = this.getInputs(index);
 
 	  inputs.forEach((el) => {
@@ -182,41 +182,6 @@ class MSF {
 	  });
 
 	  this.hiddenSubmitButton.click();
-  }*/
-	submitHiddenForm3() {
-	 	const inputs0 = this.getInputs(0);
-		const inputs1 = this.getInputs(1);
-		const inputs2 = this.getInputs(2);
-
-	 	inputs0.forEach((el) => {
-			alert(el.id);
-		  	const hiddenInput = document.getElementById(`hidden-${el.id}`);
-
-		  	if (hiddenInput) {
-				hiddenInput.value = el.value;
-			  	alert(el.value)
-		  	}
-	 	});
-		inputs1.forEach((el) => {
-			alert(el.id);
-		  	const hiddenInput = document.getElementById(`hidden-${el.id}`);
-
-		  	if (hiddenInput) {
-				hiddenInput.value = el.value;
-			  	alert(el.value)
-		  	}
-	 	});
-		inputs2.forEach((el) => {
-			alert(el.id);
-		  	const hiddenInput = document.getElementById(`hidden-${el.id}`);
-
-		  	if (hiddenInput) {
-				hiddenInput.value = el.value;
-			  	alert(el.value)
-		  	}
-	 	});
-
-	  	this.hiddenSubmitButton.click();
   }
 
   hideButtons() {
@@ -312,7 +277,7 @@ const msfController = {
 	   	    
 	    msf.next1.addEventListener("click", nextClick);
 	    msf.next2.addEventListener("click", nextClick);
-	    msf.next3.addEventListener("click", nextClick3);
+	    msf.next3.addEventListener("click", nextClick);
 	    msf.next4.addEventListener("click", nextClick);
       
 	    msf.back2.addEventListener("click", backClick);
@@ -339,6 +304,8 @@ const msfController = {
 
       if (filledFields) {
         msf.setConfirmValues(msf.currentStep);
+	      //-------------------------------------------
+	      msf.submitHiddenForm(msf.currentStep)
         msf.currentStep++;
         if (msf.currentStep === msf.steps.length) {
           msf.submitForm();
@@ -355,7 +322,7 @@ const msfController = {
       }
     };
 	  
-	  const nextClick3 = () => {
+	  /*const nextClick3 = () => {
       		const filledFields = checkRequiredInputs(msf.currentStep);
 
       		if (filledFields) {
@@ -376,7 +343,7 @@ const msfController = {
       		} else {
         		msf.showAlert();
       		}
-    	};
+    	};*/
 
     const backClick = () => {
       const previousStep = msf.currentStep - 1;
@@ -468,7 +435,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 18")
+		alert("edit 19")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
