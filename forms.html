@@ -1,8 +1,6 @@
 <!--script>
-// cambiar cual es el último paso (3 o 4) en función del check de ofertas
   $(document).ready(function() {
-  // cambiar el texto del botón
-	  alert("N ready")
+  // cambiar el texto de un botón en función de un checkbox
 	  $( "#oferta" ).change(function() {
 		  var x = document.getElementById("next3");
 		  if ((x.innerHTML === "Finalizar<br>‍") || (x.innerHTML === "Finalizar<br>")) {
@@ -11,18 +9,9 @@
 			  x.innerHTML = "Finalizar<br>";
 		  }    	
 	  });
-	  alert("pre click")
-	  $('#next3').on('click', function(e) {
-		  
-		  if( !($('#oferta').prop('checked'))) {
-			  alert("N post click, pre disable")
-			  window.alert = function() {};
-			  alert("post disable")
-			  $("#form-generico").submit();
-		  }
-	  });
   });
 </script-->
+
 
 <!--para evitar que los dropdowns de los forms tengan una opción por defecto-->
 <script>
@@ -137,7 +126,7 @@ class MSF {
     if (data.alertElementID4) {
       this.alertElement4 = document.getElementById(data.alertElementID4);
     }
-    
+    //-----------------------------------------
     if (data.hiddenFormID) {
       this.hiddenForm = document.getElementById(data.hiddenFormID);
       this.hiddenSubmitButton = this.hiddenForm.querySelector(
@@ -288,8 +277,9 @@ const msfController = {
       msf.back2.addEventListener("click", backClick);
       msf.back3.addEventListener("click", backClick);
       msf.back4.addEventListener("click", backClick);
-      
+      //-----------------------------------------
       if (msf.hiddenForm) {
+	      // cambiar este event listener por "cuando se haga click en next3"
         msf.rightArrow.addEventListener(
           "click",
           () => {
