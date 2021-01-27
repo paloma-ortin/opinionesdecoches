@@ -279,8 +279,18 @@ const msfController = {
       msf.back4.addEventListener("click", backClick);
       //-----------------------------------------
       if (msf.hiddenForm) {
-	      // cambiar este event listener por "cuando se haga click en next3"
-        msf.rightArrow.addEventListener(
+	      // cuando se haga click en el tercer paso
+	       msf.next3.addEventListener(
+		       "click",
+		       () => {
+			       msf.submitHiddenForm(0);
+		       },
+		       {
+			       once: true,
+		       }
+	       );
+	      //si queremos que se envíe en el primer paso
+        /*msf.rightArrow.addEventListener(
           "click",
           () => {
             msf.submitHiddenForm(0);
@@ -288,7 +298,7 @@ const msfController = {
           {
             once: true,
           }
-        );
+        );*/
       }
     };
 
@@ -421,7 +431,7 @@ const msfController = {
       alertElementID2: "alert2",
       alertElementID3: "alert3",
       //alertElementID4: "alert4",
-      //hiddenFormID: "form-oculto",
+      hiddenFormID: "form-no-oferta",
       //se puede meter también una alerta
       
       //ejemplo: https://brota-msf.webflow.io/starter-cloneable#msf
