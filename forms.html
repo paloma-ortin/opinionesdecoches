@@ -168,9 +168,9 @@ class MSF {
     this.submitButton.click();
   }
 
-  submitHiddenForm(index) {
+  submitHiddenForm() {
 	  alert("Aquí entra");
-	  /*const inputs = this.getInputs(index);
+	  /*const inputs = this.getInputs(0);
 
 	  inputs.forEach((el) => {
 		  alert("Aquí también");
@@ -281,7 +281,7 @@ const msfController = {
 	    msf.back4.addEventListener("click", backClick);
 	    //-----------------------------------------
 	    // cuando se haga click en el tercer paso
-	    msf.next3.addEventListener("click", submitHiddenForm(0));
+	    msf.next3.addEventListener("click", submitHiddenForm);
 	    
 	      //si queremos que se envíe en el primer paso
         /*msf.rightArrow.addEventListener(
@@ -407,7 +407,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 8")
+		alert("edit 9")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
