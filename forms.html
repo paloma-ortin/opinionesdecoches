@@ -10,12 +10,14 @@
     		x.innerHTML = "Finalizar<br>";
   		}    	
     });
-    
+    alert("pre click")
     $('#next3').on('click', function(e) {
-	window.alert = function() {};
-    	if( !($('#oferta').prop('checked'))) {
-    		$("#form-generico").submit();
-			}
+	    alert("post click, pre disable")
+	    window.alert = function() {};
+	    alert("post disable")
+	    if( !($('#oferta').prop('checked'))) {
+		    $("#form-generico").submit();
+	    }
     });
   	
   });
