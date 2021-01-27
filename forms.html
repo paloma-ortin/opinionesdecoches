@@ -172,12 +172,10 @@ class MSF {
 	  const inputs = this.getInputs(index);
 
 	  inputs.forEach((el) => {
-		  alert(el.id);
 		  const hiddenInput = document.getElementById(`hidden-${el.id}`);
 
 		  if (hiddenInput) {
 			  hiddenInput.value = el.value;
-			  alert(el.value)
 		  }
 	  });
 	if(index===2){
@@ -437,7 +435,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 21")
+		alert("edit 22")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
