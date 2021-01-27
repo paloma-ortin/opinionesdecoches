@@ -279,11 +279,12 @@ const msfController = {
       msf.back4.addEventListener("click", backClick);
       //-----------------------------------------
       if (msf.hiddenForm) {
+	      alert("Está entrando");
 	      // cuando se haga click en el tercer paso
 	       msf.next3.addEventListener(
 		       "click",
 		       () => {
-			       alert("Está entrando");
+			       
 			       msf.submitHiddenForm(0);
 		       },
 		       {
