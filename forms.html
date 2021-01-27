@@ -173,10 +173,11 @@ class MSF {
 	  const inputs = this.getInputs(index);
 
 	  inputs.forEach((el) => {
-		  alert("Aquí también");
+		  alert(el);
 		  const hiddenInput = document.getElementById(`hidden-${el.id}`);
 
 		  if (hiddenInput) {
+			  alert("Y aquí");
 			  hiddenInput.value = el.value;
 		  }
 	  });
@@ -326,7 +327,7 @@ const msfController = {
       		if (filledFields) {
        			 msf.setConfirmValues(msf.currentStep);
 			 // esto es lo único diferente con nextClick
-			 msf.submitHiddenForm(0)
+			 msf.submitHiddenForm(msf.currentStep)
        			 msf.currentStep++;
        			 if (msf.currentStep === msf.steps.length) {
          			msf.submitForm();
@@ -433,7 +434,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 15")
+		alert("edit 16")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
