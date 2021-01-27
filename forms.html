@@ -180,8 +180,9 @@ class MSF {
 			  alert(el.value)
 		  }
 	  });
-
-	  this.hiddenSubmitButton.click();
+	if(index===2){
+		this.hiddenSubmitButton.click();
+	}
   }
 
   hideButtons() {
@@ -304,9 +305,9 @@ const msfController = {
 
       if (filledFields) {
         msf.setConfirmValues(msf.currentStep);
-	      if(msf.currentStep === 2){
-		      msf.submitHiddenForm(msf.currentStep)
-	      }
+	      //----------------------------------------
+	msf.submitHiddenForm(msf.currentStep);
+	 
         msf.currentStep++;
         if (msf.currentStep === msf.steps.length) {
           msf.submitForm();
@@ -436,7 +437,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 20")
+		alert("edit 21")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
