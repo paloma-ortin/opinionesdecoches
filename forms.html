@@ -128,6 +128,7 @@ class MSF {
     }
     //-----------------------------------------
     if (data.hiddenFormID) {
+	    alert('Hay un hidden form')
       this.hiddenForm = document.getElementById(data.hiddenFormID);
       this.hiddenSubmitButton = this.hiddenForm.querySelector(
         'input[type="submit"]'
