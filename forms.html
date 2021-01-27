@@ -169,9 +169,11 @@ class MSF {
   }
 
   submitHiddenForm(index) {
+	  alert("Aquí entra");
     const inputs = this.getInputs(index);
 
     inputs.forEach((el) => {
+	    alert("Aquí también");
       const hiddenInput = document.getElementById(`hidden-${el.id}`);
 
       if (hiddenInput) {
@@ -405,7 +407,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 5")
+		alert("edit 6")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
