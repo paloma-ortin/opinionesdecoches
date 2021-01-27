@@ -134,6 +134,11 @@ class MSF {
       );
     }
   }
+  pasonext3() {
+	  alert("paso next 3");
+	  this.submitHiddenForm(0);
+	  this.goNext();
+  }
 
   getInputs(index) {
     const inputs = this.steps[index].querySelectorAll(
@@ -168,9 +173,9 @@ class MSF {
     this.submitButton.click();
   }
 
-  submitHiddenForm() {
+  submitHiddenForm(index) {
 	  alert("Aquí entra");
-	  /*const inputs = this.getInputs(0);
+	  /*const inputs = this.getInputs(index);
 
 	  inputs.forEach((el) => {
 		  alert("Aquí también");
@@ -263,6 +268,8 @@ class MSF {
   }
 }
 
+
+
 const msfController = {
   init: (msf) => {
     const start = () => {
@@ -272,11 +279,10 @@ const msfController = {
 
     const setEventListeners = () => {
 	    // cuando se haga click en el tercer paso
-	    msf.next3.addEventListener("click", submitHiddenForm);
-	    
+	   	    
 	    msf.next1.addEventListener("click", nextClick);
 	    msf.next2.addEventListener("click", nextClick);
-	    msf.next3.addEventListener("click", nextClick);
+	    msf.next3.addEventListener("click", pasonext3);
 	    msf.next4.addEventListener("click", nextClick);
       
 	    msf.back2.addEventListener("click", backClick);
@@ -409,7 +415,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 10")
+		alert("edit 11")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
