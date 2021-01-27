@@ -414,32 +414,34 @@ const msfController = {
 
 
 <script>
-  var Webflow = Webflow || [];
-  Webflow.push(function () {
-    let msfData = new MSF({
-      formID: "form-generico",
-      nextButtonID1: "next1",
-      nextButtonID2: "next2",
-      nextButtonID3: "next3",
-      nextButtonID4: "next4",
-      backButtonID2: "back2",
-      backButtonID3: "back3",
-      //backButtonID4: "back4",
-      // solo se usa si el botón de next está fuera del slider
-      //nextButtonText: "Continuar",
-      //submitButtonText: "¡Obtener respuestas!",
-      warningClass: "warning",
-      //alertText: "ALERT_TEXT",
-      alertElementID1: "alert1",
-      alertElementID2: "alert2",
-      alertElementID3: "alert3",
-      //alertElementID4: "alert4",
-      hiddenFormID: "form-no-oferta",
-      //se puede meter también una alerta
+	var Webflow = Webflow || [];
+	Webflow.push(function () {
+		alert("edit 14:58")
+		let msfData = new MSF({
+			formID: "form-generico",
+			nextButtonID1: "next1",
+			nextButtonID2: "next2",
+			nextButtonID3: "next3",
+			nextButtonID4: "next4",
+			backButtonID2: "back2",
+			backButtonID3: "back3",
+			//backButtonID4: "back4",
+			// solo se usa si el botón de next está fuera del slider
+			//nextButtonText: "Continuar",
+			//submitButtonText: "¡Obtener respuestas!",
+			warningClass: "warning",
+			//alertText: "ALERT_TEXT",
+			alertElementID1: "alert1",
+			alertElementID2: "alert2",
+			alertElementID3: "alert3",
+			//alertElementID4: "alert4",
+			hiddenFormID: "form-no-oferta",
+			//se puede meter también una alerta
       
-      //ejemplo: https://brota-msf.webflow.io/starter-cloneable#msf
-      //https://github.com/brotame/multi-step-form#step-change-buttons
-    });
-    msfController.init(msfData);
-  });
+     
+			//ejemplo: https://brota-msf.webflow.io/starter-cloneable#msf
+			//https://github.com/brotame/multi-step-form#step-change-buttons
+		});
+		msfController.init(msfData);
+	});
 </script>
