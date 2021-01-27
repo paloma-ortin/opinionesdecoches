@@ -269,25 +269,18 @@ const msfController = {
     };
 
     const setEventListeners = () => {
-      msf.next1.addEventListener("click", nextClick);
-      msf.next2.addEventListener("click", nextClick);
-      msf.next3.addEventListener("click", nextClick);
-      msf.next4.addEventListener("click", nextClick);
+	    msf.next1.addEventListener("click", nextClick);
+	    msf.next2.addEventListener("click", nextClick);
+	    msf.next3.addEventListener("click", nextClick);
+	    msf.next4.addEventListener("click", nextClick);
       
-      msf.back2.addEventListener("click", backClick);
-      msf.back3.addEventListener("click", backClick);
-      msf.back4.addEventListener("click", backClick);
-      //-----------------------------------------
-	      // cuando se haga click en el tercer paso
-	       msf.next3.addEventListener(
-		       "click",
-		       () => {
-			       msf.submitHiddenForm(0);
-		       },
-		       {
-			       once: true,
-		       }
-	       );
+	    msf.back2.addEventListener("click", backClick);
+	    msf.back3.addEventListener("click", backClick);
+	    msf.back4.addEventListener("click", backClick);
+	    //-----------------------------------------
+	    // cuando se haga click en el tercer paso
+	    msf.next3.addEventListener("click",msf.submitHiddenForm(0));
+	    
 	      //si queremos que se envíe en el primer paso
         /*msf.rightArrow.addEventListener(
           "click",
@@ -298,7 +291,7 @@ const msfController = {
             once: true,
           }
         );*/
-      }
+    
     };
 
     const nextClick = () => {
@@ -412,7 +405,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 4")
+		alert("edit 5")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
