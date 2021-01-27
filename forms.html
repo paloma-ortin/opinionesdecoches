@@ -147,14 +147,14 @@ class MSF {
     this.mask.style.height = `${this.steps[this.currentStep].offsetHeight}px`;
   }
 
-  setNextButtonText() {
+  /*setNextButtonText() {
     if (this.currentStep === this.steps.length - 1) {
       this.next.textContent = this.submitText;
     }
     if (this.currentStep === this.steps.length - 2) {
       this.next.textContent = this.nextText;
     }
-  }
+  }*/
 
   goNext() {
     this.rightArrow.click();
@@ -282,7 +282,6 @@ const msfController = {
 	       msf.next3.addEventListener(
 		       "click",
 		       () => {
-			       alert("envío de form")
 			       msf.submitHiddenForm(0);
 		       },
 		       {
