@@ -168,7 +168,7 @@ class MSF {
     this.submitButton.click();
   }
 
-  submitHiddenForm(index) {
+  /*submitHiddenForm(index) {
 	  const inputs = this.getInputs(index);
 
 	  inputs.forEach((el) => {
@@ -182,6 +182,41 @@ class MSF {
 	  });
 
 	  this.hiddenSubmitButton.click();
+  }*/
+	submitHiddenForm3() {
+	 	const inputs0 = this.getInputs(0);
+		const inputs1 = this.getInputs(1);
+		const inputs2 = this.getInputs(2);
+
+	 	inputs0.forEach((el) => {
+			alert(el.id);
+		  	const hiddenInput = document.getElementById(`hidden-${el.id}`);
+
+		  	if (hiddenInput) {
+				hiddenInput.value = el.value;
+			  	alert(el.value)
+		  	}
+	 	});
+		inputs1.forEach((el) => {
+			alert(el.id);
+		  	const hiddenInput = document.getElementById(`hidden-${el.id}`);
+
+		  	if (hiddenInput) {
+				hiddenInput.value = el.value;
+			  	alert(el.value)
+		  	}
+	 	});
+		inputs2.forEach((el) => {
+			alert(el.id);
+		  	const hiddenInput = document.getElementById(`hidden-${el.id}`);
+
+		  	if (hiddenInput) {
+				hiddenInput.value = el.value;
+			  	alert(el.value)
+		  	}
+	 	});
+
+	  	this.hiddenSubmitButton.click();
   }
 
   hideButtons() {
@@ -433,7 +468,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 17")
+		alert("edit 18")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
