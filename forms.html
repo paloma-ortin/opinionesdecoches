@@ -27,7 +27,194 @@
 	$(document).ready(function() {
 		$( "#marca" ).change(function() {
 			switch($('#marca').val()) {
-				case "Seat":
+				case "ABARTH":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("124 Spider", "124 Spider"));
+					$("#modelo").append(new Option("500", "500"));
+					$("#modelo").append(new Option("500C", "500C"));
+          				break;
+				case "ALFA ROMEO":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Giulia", "Giulia"));
+					$("#modelo").append(new Option("Giulietta", "Giulietta"));
+					$("#modelo").append(new Option("MiTo", "MiTo"));
+					$("#modelo").append(new Option("Stelvio", "Stelvio"));
+          				break;
+				case "ALPINE":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("A110", "A110"));
+          				break;
+				case "ASTON MARTIN":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("DB11", "DB11"));
+					$("#modelo").append(new Option("DBS Superleggera", "DBS Superleggera"));
+					$("#modelo").append(new Option("Vantage", "Vantage"));
+          				break;
+				case "AUDI":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("124 Spider", "124 Spider"));
+					$("#modelo").append(new Option("500", "500"));
+					$("#modelo").append(new Option("500C", "500C"));
+          				break;
+				case "ABARTH":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("A1", "A1"));
+					$("#modelo").append(new Option("A1 Citycarver", "A1 Citycarver"));
+					$("#modelo").append(new Option("A1 Sportback", "A1 Sportback"));
+					$("#modelo").append(new Option("A3", "A3"));
+					$("#modelo").append(new Option("A3 Cabrio", "A3 Cabrio"));
+					$("#modelo").append(new Option("A3 Sedan", "A3 Sedan"));
+					$("#modelo").append(new Option("A3 Sportback", "A3 Sportback"));
+					$("#modelo").append(new Option("A3 Sportback g-tron", "A3 Sportback g-tron"));
+					$("#modelo").append(new Option("A4", "A4"));
+					$("#modelo").append(new Option("A4 Allroad Quattro", "A4 Allroad Quattro"));
+					$("#modelo").append(new Option("A4 Avant", "A4 Avant"));
+					$("#modelo").append(new Option("A5", "A5"));
+					$("#modelo").append(new Option("A5 Cabrio", "A5 Cabrio"));
+					$("#modelo").append(new Option("A5 Coupe", "A5 Coupe"));
+					$("#modelo").append(new Option("A5 Sportback", "A5 Sportback"));
+					$("#modelo").append(new Option("A5 Sportback g-tron", "A5 Sportback g-tron"));
+					$("#modelo").append(new Option("A6", "A6"));
+					$("#modelo").append(new Option("A6 allroad quattro", "A6 allroad quattro"));
+					$("#modelo").append(new Option("A6 Avant", "A6 Avant"));
+					$("#modelo").append(new Option("A7", "A7"));
+					$("#modelo").append(new Option("A7 Sportback", "A7 Sportback"));
+					$("#modelo").append(new Option("A8", "A8"));
+					$("#modelo").append(new Option("A8 L", "A8 L"));
+					$("#modelo").append(new Option("e-tron", "e-tron"));
+					$("#modelo").append(new Option("Q2", "Q2"));
+					$("#modelo").append(new Option("Q3", "Q3"));
+					$("#modelo").append(new Option("Q3 Sportback", "Q3 Sportback"));
+					$("#modelo").append(new Option("Q5", "Q5"));
+					$("#modelo").append(new Option("Q5 TFSIe", "Q5 TFSIe"));
+					$("#modelo").append(new Option("Q7", "Q7"));
+					$("#modelo").append(new Option("Q8", "Q8"));
+					$("#modelo").append(new Option("R8", "R8"));
+					$("#modelo").append(new Option("R8 Coupé V10 quattro", "R8 Coupé V10 quattro"));
+					$("#modelo").append(new Option("R8 Spyder V10 quattro", "R8 Spyder V10 quattro"));
+					$("#modelo").append(new Option("RS 3 Sedan", "RS 3 Sedan"));
+					$("#modelo").append(new Option("RS 3 Sportback", "RS 3 Sportback"));
+					$("#modelo").append(new Option("RS 5 Coupe", "RS 5 Coupe"));
+					$("#modelo").append(new Option("S3 Cabrio TFSI", "S3 Cabrio TFSI"));
+					$("#modelo").append(new Option("S3 Sedan TFSI", "S3 Sedan TFSI"));
+					$("#modelo").append(new Option("S3 Sportback TFSI", "S3 Sportback TFSI"));
+					$("#modelo").append(new Option("S4 TDI", "S4 TDI"));
+					$("#modelo").append(new Option("S6 Avant TDI", "S6 Avant TDI"));
+					$("#modelo").append(new Option("S7 Sportback TDI", "S7 Sportback TDI"));
+					$("#modelo").append(new Option("SQ2 TFSI", "SQ2 TFSI"));
+					$("#modelo").append(new Option("TT", "TT"));
+					$("#modelo").append(new Option("TT Coupé", "TT Coupé"));
+					$("#modelo").append(new Option("TT Roadster", "TT Roadster"));
+					$("#modelo").append(new Option("TT RS Coupé", "TT RS Coupé"));
+					$("#modelo").append(new Option("TT RS Roadster", "TT RS Roadster"));
+					$("#modelo").append(new Option("TTS Coupé TFSI", "TTS Coupé TFSI"));
+					$("#modelo").append(new Option("TTS Roadster TFSI", "TTS Roadster TFSI"));
+          				break;
+				/*case "ABARTH":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("124 Spider", "124 Spider"));
+					$("#modelo").append(new Option("500", "500"));
+					$("#modelo").append(new Option("500C", "500C"));
+          				break;
+				case "ABARTH":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("124 Spider", "124 Spider"));
+					$("#modelo").append(new Option("500", "500"));
+					$("#modelo").append(new Option("500C", "500C"));
+          				break;
+				case "ABARTH":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("124 Spider", "124 Spider"));
+					$("#modelo").append(new Option("500", "500"));
+					$("#modelo").append(new Option("500C", "500C"));
+          				break;
+				case "ABARTH":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("124 Spider", "124 Spider"));
+					$("#modelo").append(new Option("500", "500"));
+					$("#modelo").append(new Option("500C", "500C"));
+          				break;
+				/*case "Seat":
 					var modelo = document.getElementById("modelo");
 		    			//borra las opciones anteriores
 		    			var length = modelo.options.length;
@@ -68,7 +255,7 @@
 		    			$("#modelo").append(new Option("Mégane", "Megane"));
 		    			$("#modelo").append(new Option("Captur", "Captur"));
           				$("#modelo").append(new Option("Zoe", "Zoe"));
-          				break;
+          				break;*/
 			}
 		});
 	});
