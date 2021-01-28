@@ -26,7 +26,6 @@
 	//selectores dinámicos por marcas
 	$(document).ready(function() {
 		$( "#marca" ).change(function() {
-			alert($('#marca').val());
 			switch($('#marca').val()) {
 				case "ABARTH":
 					var modelo = document.getElementById("modelo");
@@ -969,7 +968,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 23")
+		alert("edit 24")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
