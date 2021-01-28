@@ -26,6 +26,7 @@
 	//selectores dinámicos por marcas
 	$(document).ready(function() {
 		$( "#marca" ).change(function() {
+			alert($('#marca').val());
 			switch($('#marca').val()) {
 				case "ABARTH":
 					var modelo = document.getElementById("modelo");
@@ -158,7 +159,7 @@
 					$("#modelo").append(new Option("TTS Coupé TFSI", "TTS Coupé TFSI"));
 					$("#modelo").append(new Option("TTS Roadster TFSI", "TTS Roadster TFSI"));
           				break;
-				/*case "ABARTH":
+				case "BENTLEY":
 					var modelo = document.getElementById("modelo");
 		    			//borra las opciones anteriores
 		    			var length = modelo.options.length;
@@ -168,11 +169,12 @@
 		    			// $("#modelo").append(new Option("Elige un modelo", ""));
         				// $("#modelo").children('option:first').attr("disabled", "disabled");
 		    			// añade las opciones
-					$("#modelo").append(new Option("124 Spider", "124 Spider"));
-					$("#modelo").append(new Option("500", "500"));
-					$("#modelo").append(new Option("500C", "500C"));
+					$("#modelo").append(new Option("Bentayga", "Bentayga"));
+					$("#modelo").append(new Option("Continental GT", "Continental GT"));
+					$("#modelo").append(new Option("Flying Spur", "Flying Spur"));
+					$("#modelo").append(new Option("Mulsanne", "Mulsanne"));
           				break;
-				case "ABARTH":
+				case "BMW":
 					var modelo = document.getElementById("modelo");
 		    			//borra las opciones anteriores
 		    			var length = modelo.options.length;
@@ -182,11 +184,50 @@
 		    			// $("#modelo").append(new Option("Elige un modelo", ""));
         				// $("#modelo").children('option:first').attr("disabled", "disabled");
 		    			// añade las opciones
-					$("#modelo").append(new Option("124 Spider", "124 Spider"));
-					$("#modelo").append(new Option("500", "500"));
-					$("#modelo").append(new Option("500C", "500C"));
+					$("#modelo").append(new Option("i3", "i3"));
+					$("#modelo").append(new Option("i8", "i8"));
+					$("#modelo").append(new Option("i8 Coupé", "i8 Coupé"));
+					$("#modelo").append(new Option("i8 Roadster", "i8 Roadster"));
+					$("#modelo").append(new Option("M2 Competition", "M2 Competition"));
+					$("#modelo").append(new Option("M240i Cabrio", "M240i Cabrio"));
+					$("#modelo").append(new Option("M4 Cabrio", "M4 Cabrio"));
+					$("#modelo").append(new Option("M4 Coupé", "M4 Coupé"));
+					$("#modelo").append(new Option("M5 Berlina", "M5 Berlina"));
+					$("#modelo").append(new Option("Serie 1", "Serie 1"));
+					$("#modelo").append(new Option("Serie 2", "Serie 2"));
+					$("#modelo").append(new Option("Serie 2 Active Tourer", "Serie 2 Active Tourer"));
+					$("#modelo").append(new Option("Serie 2 Cabrio", "Serie 2 Cabrio"));
+					$("#modelo").append(new Option("Serie 2 Coupé", "Serie 2 Coupé"));
+					$("#modelo").append(new Option("Serie 2 Gran Tourer", "Serie 2 Gran Tourer"));
+					$("#modelo").append(new Option("Serie 3", "Serie 3"));
+					$("#modelo").append(new Option("Serie 3 Berlina", "Serie 3 Berlina"));
+					$("#modelo").append(new Option("Serie 3 Gran Turismo", "Serie 3 Gran Turismo"));
+					$("#modelo").append(new Option("Serie 3 Touring", "Serie 3 Touring"));
+					$("#modelo").append(new Option("Serie 4", "Serie 4"));
+					$("#modelo").append(new Option("Serie 4 Cabrio", "Serie 4 Cabrio"));
+					$("#modelo").append(new Option("Serie 4 Coupé", "Serie 4 Coupé"));
+					$("#modelo").append(new Option("Serie 4 Gran Coupé", "Serie 4 Gran Coupé"));
+					$("#modelo").append(new Option("Serie 5", "Serie 5"));
+					$("#modelo").append(new Option("Serie 5 Berlina", "Serie 5 Berlina"));
+					$("#modelo").append(new Option("Serie 5 Touring", "Serie 5 Touring"));
+					$("#modelo").append(new Option("Serie 6", "Serie 6"));
+					$("#modelo").append(new Option("Serie 6 Gran Turismo", "Serie 6 Gran Turismo"));
+					$("#modelo").append(new Option("Serie 7", "Serie 7"));
+					$("#modelo").append(new Option("Serie 8", "Serie 8"));
+					$("#modelo").append(new Option("Serie 8 Cabrio", "Serie 8 Cabrio"));
+					$("#modelo").append(new Option("Serie 8 Coupé", "Serie 8 Coupé"));
+					$("#modelo").append(new Option("X1", "X1"));
+					$("#modelo").append(new Option("X2", "X2"));
+					$("#modelo").append(new Option("X3", "X3"));
+					$("#modelo").append(new Option("X3 M", "X3 M"));
+					$("#modelo").append(new Option("X4", "X4"));
+					$("#modelo").append(new Option("X4 M", "X4 M"));
+					$("#modelo").append(new Option("X5", "X5"));
+					$("#modelo").append(new Option("X6", "X6"));
+					$("#modelo").append(new Option("X7", "X7"));
+					$("#modelo").append(new Option("Z4", "Z4"));
           				break;
-				case "ABARTH":
+				case "CITROEN":
 					var modelo = document.getElementById("modelo");
 		    			//borra las opciones anteriores
 		    			var length = modelo.options.length;
@@ -196,11 +237,23 @@
 		    			// $("#modelo").append(new Option("Elige un modelo", ""));
         				// $("#modelo").children('option:first').attr("disabled", "disabled");
 		    			// añade las opciones
-					$("#modelo").append(new Option("124 Spider", "124 Spider"));
-					$("#modelo").append(new Option("500", "500"));
-					$("#modelo").append(new Option("500C", "500C"));
+					$("#modelo").append(new Option("Berlingo", "Berlingo"));
+					$("#modelo").append(new Option("C1", "C1"));
+					$("#modelo").append(new Option("C3", "C3"));
+					$("#modelo").append(new Option("C3 Aircross", "C3 Aircross"));
+					$("#modelo").append(new Option("C4", "C4"));
+					$("#modelo").append(new Option("C4 Cactus", "C4 Cactus"));
+					$("#modelo").append(new Option("C4 Spacetourer", "C4 Spacetourer"));
+					$("#modelo").append(new Option("C5 Aircross", "C5 Aircross"));
+					$("#modelo").append(new Option("C-Elysée", "C-Elysée"));
+					$("#modelo").append(new Option("C-Zero", "C-Zero"));
+					$("#modelo").append(new Option("E-Mehari", "E-Mehari"));
+					$("#modelo").append(new Option("Grand C4 Spacetourer", "Grand C4 Spacetourer"));
+					$("#modelo").append(new Option("Spacetourer", "Spacetourer"));
+					$("#modelo").append(new Option("Spacetourer Business Lounge", "Spacetourer Business Lounge"));
+					$("#modelo").append(new Option("SUV C5 Aircross Hybrid", "SUV C5 Aircross Hybrid"));
           				break;
-				case "ABARTH":
+				case "CUPRA":
 					var modelo = document.getElementById("modelo");
 		    			//borra las opciones anteriores
 		    			var length = modelo.options.length;
@@ -210,9 +263,235 @@
 		    			// $("#modelo").append(new Option("Elige un modelo", ""));
         				// $("#modelo").children('option:first').attr("disabled", "disabled");
 		    			// añade las opciones
-					$("#modelo").append(new Option("124 Spider", "124 Spider"));
-					$("#modelo").append(new Option("500", "500"));
-					$("#modelo").append(new Option("500C", "500C"));
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				/*case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "CUPRA":
+					var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			// $("#modelo").append(new Option("Elige un modelo", ""));
+        				// $("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
           				break;
 				/*case "Seat":
 					var modelo = document.getElementById("modelo");
@@ -622,7 +901,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		//alert("edit 22")
+		alert("edit 22")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
