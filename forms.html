@@ -23,9 +23,705 @@
 </script>
 
 <script>
+	function cambiar_marca(marca){
+		var modelo = document.getElementById("modelo");
+		    			//borra las opciones anteriores
+		    			var length = modelo.options.length;
+		    			for (i = length-1; i >= 0; i--) {
+			    			modelo.options[i] = null;
+		    			}
+		    			$("#modelo").append(new Option("Elige un modelo", ""));
+        				$("#modelo").children('option:first').attr("disabled", "disabled");
+		    			// añade las opciones
+		switch(marca) {
+				case "ABARTH":
+					
+					$("#modelo").append(new Option("124 Spider", "124 Spider"));
+					$("#modelo").append(new Option("500", "500"));
+					$("#modelo").append(new Option("500C", "500C"));
+          				break;
+				case "ALFA ROMEO":
+					
+					$("#modelo").append(new Option("Giulia", "Giulia"));
+					$("#modelo").append(new Option("Giulietta", "Giulietta"));
+					$("#modelo").append(new Option("MiTo", "MiTo"));
+					$("#modelo").append(new Option("Stelvio", "Stelvio"));
+          				break;
+				case "ALPINE":
+					
+					$("#modelo").append(new Option("A110", "A110"));
+          				break;
+				case "ASTON MARTIN":
+					
+					$("#modelo").append(new Option("DB11", "DB11"));
+					$("#modelo").append(new Option("DBS Superleggera", "DBS Superleggera"));
+					$("#modelo").append(new Option("Vantage", "Vantage"));
+          				break;
+				
+				case "AUDI":
+					
+					$("#modelo").append(new Option("A1", "A1"));
+					$("#modelo").append(new Option("A1 Citycarver", "A1 Citycarver"));
+					$("#modelo").append(new Option("A1 Sportback", "A1 Sportback"));
+					$("#modelo").append(new Option("A3", "A3"));
+					$("#modelo").append(new Option("A3 Cabrio", "A3 Cabrio"));
+					$("#modelo").append(new Option("A3 Sedan", "A3 Sedan"));
+					$("#modelo").append(new Option("A3 Sportback", "A3 Sportback"));
+					$("#modelo").append(new Option("A3 Sportback g-tron", "A3 Sportback g-tron"));
+					$("#modelo").append(new Option("A4", "A4"));
+					$("#modelo").append(new Option("A4 Allroad Quattro", "A4 Allroad Quattro"));
+					$("#modelo").append(new Option("A4 Avant", "A4 Avant"));
+					$("#modelo").append(new Option("A5", "A5"));
+					$("#modelo").append(new Option("A5 Cabrio", "A5 Cabrio"));
+					$("#modelo").append(new Option("A5 Coupe", "A5 Coupe"));
+					$("#modelo").append(new Option("A5 Sportback", "A5 Sportback"));
+					$("#modelo").append(new Option("A5 Sportback g-tron", "A5 Sportback g-tron"));
+					$("#modelo").append(new Option("A6", "A6"));
+					$("#modelo").append(new Option("A6 allroad quattro", "A6 allroad quattro"));
+					$("#modelo").append(new Option("A6 Avant", "A6 Avant"));
+					$("#modelo").append(new Option("A7", "A7"));
+					$("#modelo").append(new Option("A7 Sportback", "A7 Sportback"));
+					$("#modelo").append(new Option("A8", "A8"));
+					$("#modelo").append(new Option("A8 L", "A8 L"));
+					$("#modelo").append(new Option("e-tron", "e-tron"));
+					$("#modelo").append(new Option("Q2", "Q2"));
+					$("#modelo").append(new Option("Q3", "Q3"));
+					$("#modelo").append(new Option("Q3 Sportback", "Q3 Sportback"));
+					$("#modelo").append(new Option("Q5", "Q5"));
+					$("#modelo").append(new Option("Q5 TFSIe", "Q5 TFSIe"));
+					$("#modelo").append(new Option("Q7", "Q7"));
+					$("#modelo").append(new Option("Q8", "Q8"));
+					$("#modelo").append(new Option("R8", "R8"));
+					$("#modelo").append(new Option("R8 Coupé V10 quattro", "R8 Coupé V10 quattro"));
+					$("#modelo").append(new Option("R8 Spyder V10 quattro", "R8 Spyder V10 quattro"));
+					$("#modelo").append(new Option("RS 3 Sedan", "RS 3 Sedan"));
+					$("#modelo").append(new Option("RS 3 Sportback", "RS 3 Sportback"));
+					$("#modelo").append(new Option("RS 5 Coupe", "RS 5 Coupe"));
+					$("#modelo").append(new Option("S3 Cabrio TFSI", "S3 Cabrio TFSI"));
+					$("#modelo").append(new Option("S3 Sedan TFSI", "S3 Sedan TFSI"));
+					$("#modelo").append(new Option("S3 Sportback TFSI", "S3 Sportback TFSI"));
+					$("#modelo").append(new Option("S4 TDI", "S4 TDI"));
+					$("#modelo").append(new Option("S6 Avant TDI", "S6 Avant TDI"));
+					$("#modelo").append(new Option("S7 Sportback TDI", "S7 Sportback TDI"));
+					$("#modelo").append(new Option("SQ2 TFSI", "SQ2 TFSI"));
+					$("#modelo").append(new Option("TT", "TT"));
+					$("#modelo").append(new Option("TT Coupé", "TT Coupé"));
+					$("#modelo").append(new Option("TT Roadster", "TT Roadster"));
+					$("#modelo").append(new Option("TT RS Coupé", "TT RS Coupé"));
+					$("#modelo").append(new Option("TT RS Roadster", "TT RS Roadster"));
+					$("#modelo").append(new Option("TTS Coupé TFSI", "TTS Coupé TFSI"));
+					$("#modelo").append(new Option("TTS Roadster TFSI", "TTS Roadster TFSI"));
+          				break;
+				case "BENTLEY":
+					
+					$("#modelo").append(new Option("Bentayga", "Bentayga"));
+					$("#modelo").append(new Option("Continental GT", "Continental GT"));
+					$("#modelo").append(new Option("Flying Spur", "Flying Spur"));
+					$("#modelo").append(new Option("Mulsanne", "Mulsanne"));
+          				break;
+				case "BMW":
+					
+					$("#modelo").append(new Option("i3", "i3"));
+					$("#modelo").append(new Option("i8", "i8"));
+					$("#modelo").append(new Option("i8 Coupé", "i8 Coupé"));
+					$("#modelo").append(new Option("i8 Roadster", "i8 Roadster"));
+					$("#modelo").append(new Option("M2 Competition", "M2 Competition"));
+					$("#modelo").append(new Option("M240i Cabrio", "M240i Cabrio"));
+					$("#modelo").append(new Option("M4 Cabrio", "M4 Cabrio"));
+					$("#modelo").append(new Option("M4 Coupé", "M4 Coupé"));
+					$("#modelo").append(new Option("M5 Berlina", "M5 Berlina"));
+					$("#modelo").append(new Option("Serie 1", "Serie 1"));
+					$("#modelo").append(new Option("Serie 2", "Serie 2"));
+					$("#modelo").append(new Option("Serie 2 Active Tourer", "Serie 2 Active Tourer"));
+					$("#modelo").append(new Option("Serie 2 Cabrio", "Serie 2 Cabrio"));
+					$("#modelo").append(new Option("Serie 2 Coupé", "Serie 2 Coupé"));
+					$("#modelo").append(new Option("Serie 2 Gran Tourer", "Serie 2 Gran Tourer"));
+					$("#modelo").append(new Option("Serie 3", "Serie 3"));
+					$("#modelo").append(new Option("Serie 3 Berlina", "Serie 3 Berlina"));
+					$("#modelo").append(new Option("Serie 3 Gran Turismo", "Serie 3 Gran Turismo"));
+					$("#modelo").append(new Option("Serie 3 Touring", "Serie 3 Touring"));
+					$("#modelo").append(new Option("Serie 4", "Serie 4"));
+					$("#modelo").append(new Option("Serie 4 Cabrio", "Serie 4 Cabrio"));
+					$("#modelo").append(new Option("Serie 4 Coupé", "Serie 4 Coupé"));
+					$("#modelo").append(new Option("Serie 4 Gran Coupé", "Serie 4 Gran Coupé"));
+					$("#modelo").append(new Option("Serie 5", "Serie 5"));
+					$("#modelo").append(new Option("Serie 5 Berlina", "Serie 5 Berlina"));
+					$("#modelo").append(new Option("Serie 5 Touring", "Serie 5 Touring"));
+					$("#modelo").append(new Option("Serie 6", "Serie 6"));
+					$("#modelo").append(new Option("Serie 6 Gran Turismo", "Serie 6 Gran Turismo"));
+					$("#modelo").append(new Option("Serie 7", "Serie 7"));
+					$("#modelo").append(new Option("Serie 8", "Serie 8"));
+					$("#modelo").append(new Option("Serie 8 Cabrio", "Serie 8 Cabrio"));
+					$("#modelo").append(new Option("Serie 8 Coupé", "Serie 8 Coupé"));
+					$("#modelo").append(new Option("X1", "X1"));
+					$("#modelo").append(new Option("X2", "X2"));
+					$("#modelo").append(new Option("X3", "X3"));
+					$("#modelo").append(new Option("X3 M", "X3 M"));
+					$("#modelo").append(new Option("X4", "X4"));
+					$("#modelo").append(new Option("X4 M", "X4 M"));
+					$("#modelo").append(new Option("X5", "X5"));
+					$("#modelo").append(new Option("X6", "X6"));
+					$("#modelo").append(new Option("X7", "X7"));
+					$("#modelo").append(new Option("Z4", "Z4"));
+          				break;
+				case "CITROEN":
+					
+					$("#modelo").append(new Option("Berlingo", "Berlingo"));
+					$("#modelo").append(new Option("C1", "C1"));
+					$("#modelo").append(new Option("C3", "C3"));
+					$("#modelo").append(new Option("C3 Aircross", "C3 Aircross"));
+					$("#modelo").append(new Option("C4", "C4"));
+					$("#modelo").append(new Option("C4 Cactus", "C4 Cactus"));
+					$("#modelo").append(new Option("C4 Spacetourer", "C4 Spacetourer"));
+					$("#modelo").append(new Option("C5 Aircross", "C5 Aircross"));
+					$("#modelo").append(new Option("C-Elysée", "C-Elysée"));
+					$("#modelo").append(new Option("C-Zero", "C-Zero"));
+					$("#modelo").append(new Option("E-Mehari", "E-Mehari"));
+					$("#modelo").append(new Option("Grand C4 Spacetourer", "Grand C4 Spacetourer"));
+					$("#modelo").append(new Option("Spacetourer", "Spacetourer"));
+					$("#modelo").append(new Option("Spacetourer Business Lounge", "Spacetourer Business Lounge"));
+					$("#modelo").append(new Option("SUV C5 Aircross Hybrid", "SUV C5 Aircross Hybrid"));
+          				break;
+				case "CUPRA":
+					
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Formentor", "Formentor"));
+					$("#modelo").append(new Option("León Cupra", "León Cupra"));
+					$("#modelo").append(new Option("León Cupra Sportstourer", "León Cupra Sportstourer"));
+          				break;
+				case "DACIA":
+					
+					$("#modelo").append(new Option("Dokker", "Dokker"));
+					$("#modelo").append(new Option("Dokker Stepway", "Dokker Stepway"));
+					$("#modelo").append(new Option("Duster", "Duster"));
+					$("#modelo").append(new Option("Lodgy", "Lodgy"));
+					$("#modelo").append(new Option("Lodgy Stepway", "Lodgy Stepway"));
+					$("#modelo").append(new Option("Logan", "Logan"));
+					$("#modelo").append(new Option("Logan MCV", "Logan MCV"));
+					$("#modelo").append(new Option("Logan MCV Stepway", "Logan MCV Stepway"));
+					$("#modelo").append(new Option("Sandero", "Sandero"));
+					$("#modelo").append(new Option("Sandero Stepway", "Sandero Stepway"));
+          				break;
+				case "DFSK":
+					
+					$("#modelo").append(new Option("580", "580"));
+          				break;
+				case "DR AUTOMOBILES":
+					
+					$("#modelo").append(new Option("DR3", "DR3"));
+					$("#modelo").append(new Option("DR4", "DR4"));
+					$("#modelo").append(new Option("DR5 EVO", "DR5 EVO"));
+					$("#modelo").append(new Option("DR6", "DR6"));
+          				break;
+				
+				case "DS":
+					
+					$("#modelo").append(new Option("DS 3", "DS 3"));
+					$("#modelo").append(new Option("DS 3 Crossback", "DS 3 Crossback"));
+					$("#modelo").append(new Option("DS 7 Crossback", "DS 7 Crossback"));
+					$("#modelo").append(new Option("DS 7 Crossback E-Tense", "DS 7 Crossback E-Tense"));
+          				break;
+				case "FERRARI":
+					
+					$("#modelo").append(new Option("488", "488"));
+					$("#modelo").append(new Option("812", "812"));
+					$("#modelo").append(new Option("GTC4", "GTC4"));
+					$("#modelo").append(new Option("Portofino", "Portofino"));
+          				break;
+				case "FIAT":
+					
+					$("#modelo").append(new Option("124 Spider", "124 Spider"));
+					$("#modelo").append(new Option("500", "500"));
+					$("#modelo").append(new Option("500C", "500C"));
+					$("#modelo").append(new Option("500L", "500L"));
+					$("#modelo").append(new Option("500X", "500X"));
+					$("#modelo").append(new Option("Doblò Panorama", "Doblò Panorama"));
+					$("#modelo").append(new Option("Panda", "Panda"));
+					$("#modelo").append(new Option("Qubo", "Qubo"));
+					$("#modelo").append(new Option("Tipo", "Tipo"));
+          				break;
+				case "FORD":
+					
+					$("#modelo").append(new Option("C-Max", "C-Max"));
+					$("#modelo").append(new Option("EcoSport", "EcoSport"));
+					$("#modelo").append(new Option("Edge", "Edge"));
+					$("#modelo").append(new Option("Explorer", "Explorer"));
+					$("#modelo").append(new Option("Fiesta", "Fiesta"));
+					$("#modelo").append(new Option("Focus", "Focus"));
+					$("#modelo").append(new Option("Focus Active", "Focus Active"));
+					$("#modelo").append(new Option("Focus Sportbreak", "Focus Sportbreak"));
+					$("#modelo").append(new Option("Galaxy", "Galaxy"));
+					$("#modelo").append(new Option("Grand C-Max", "Grand C-Max"));
+					$("#modelo").append(new Option("Grand Tourneo Connect", "Grand Tourneo Connect"));
+					$("#modelo").append(new Option("Ka+", "Ka+"));
+					$("#modelo").append(new Option("Kuga", "Kuga"));
+					$("#modelo").append(new Option("Mondeo", "Mondeo"));
+					$("#modelo").append(new Option("Mondeo Sportbreak", "Mondeo Sportbreak"));
+					$("#modelo").append(new Option("Mustang", "Mustang"));
+					$("#modelo").append(new Option("Puma", "Puma"));
+					$("#modelo").append(new Option("Puma ST", "Puma ST"));
+					$("#modelo").append(new Option("Ranger", "Ranger"));
+					$("#modelo").append(new Option("S-MAX", "S-MAX"));
+					$("#modelo").append(new Option("Tourneo Connect", "Tourneo Connect"));
+					$("#modelo").append(new Option("Tourneo Courier", "Tourneo Courier"));
+					$("#modelo").append(new Option("Tourneo Custom", "Tourneo Custom"));
+          				break;
+				case "HONDA":
+					
+					$("#modelo").append(new Option("Civic", "Civic"));
+					$("#modelo").append(new Option("Civic 5 Puertas", "Civic 5 Puertas"));
+					$("#modelo").append(new Option("Civic Sedan", "Civic Sedan"));
+					$("#modelo").append(new Option("Civic Type R", "Civic Type R"));
+					$("#modelo").append(new Option("CR-V", "CR-V"));
+					$("#modelo").append(new Option("CR-V Petrol", "CR-V Petrol"));
+					$("#modelo").append(new Option("Honda e", "Honda e"));
+					$("#modelo").append(new Option("HR-V", "HR-V"));
+					$("#modelo").append(new Option("Jazz", "Jazz"));
+          				break;
+				case "HYUNDAI":
+					
+					$("#modelo").append(new Option("H-1 Travel", "H-1 Travel"));
+					$("#modelo").append(new Option("i10", "i10"));
+					$("#modelo").append(new Option("i20", "i20"));
+					$("#modelo").append(new Option("i20 Active", "i20 Active"));
+					$("#modelo").append(new Option("i20 Coupé", "i20 Coupé"));
+					$("#modelo").append(new Option("i30", "i30"));
+					$("#modelo").append(new Option("i30 Fastback", "i30 Fastback"));
+					$("#modelo").append(new Option("i30 Fastback N", "i30 Fastback N"));
+					$("#modelo").append(new Option("i30 N", "i30 N"));
+					$("#modelo").append(new Option("i30cw", "i30cw"));
+					$("#modelo").append(new Option("i40", "i40"));
+					$("#modelo").append(new Option("i40 cw", "i40 cw"));
+					$("#modelo").append(new Option("Ioniq", "IONIQ"));
+					$("#modelo").append(new Option("Ioniq eléctrico", "IONIQ eléctrico"));
+					$("#modelo").append(new Option("Ioniq Híbrido", "IONIQ Híbrido"));
+					$("#modelo").append(new Option("ix20", "ix20"));
+					$("#modelo").append(new Option("Kona", "KONA"));
+					$("#modelo").append(new Option("Kona Eléctrico", "KONA Eléctrico"));
+					$("#modelo").append(new Option("Nexo", "NEXO"));
+					$("#modelo").append(new Option("Santa Fe", "Santa Fe"));
+					$("#modelo").append(new Option("Tucson", "Tucson"));
+          				break;
+				case "INFINITI":
+					
+					$("#modelo").append(new Option("Q30", "Q30"));
+					$("#modelo").append(new Option("Q50", "Q50"));
+					$("#modelo").append(new Option("Q60", "Q60"));
+					$("#modelo").append(new Option("Q70", "Q70"));
+					$("#modelo").append(new Option("QX30", "QX30"));
+          				break;
+				case "JAGUAR":
+					
+					$("#modelo").append(new Option("E-Pace", "E-Pace"));
+					$("#modelo").append(new Option("F-Pace", "F-Pace"));
+					$("#modelo").append(new Option("F-Type", "F-Type"));
+					$("#modelo").append(new Option("I-Pace", "I-Pace"));
+					$("#modelo").append(new Option("i-Pace", "i-Pace"));
+					$("#modelo").append(new Option("XE", "XE"));
+					$("#modelo").append(new Option("XF", "XF"));
+					$("#modelo").append(new Option("XJ", "XJ"));
+          				break;
+				case "JEEP":
+					
+					$("#modelo").append(new Option("Cherokee", "Cherokee"));
+					$("#modelo").append(new Option("Compass", "Compass"));
+					$("#modelo").append(new Option("Grand Cherokee", "Grand Cherokee"));
+					$("#modelo").append(new Option("Renegade", "Renegade"));
+					$("#modelo").append(new Option("Wrangler", "Wrangler"));
+          				break;
+				case "KIA":
+					
+					$("#modelo").append(new Option("Carens 2018", "Carens 2018"));
+					$("#modelo").append(new Option("Ceed", "Ceed"));
+					$("#modelo").append(new Option("Ceed GT", "Ceed GT"));
+					$("#modelo").append(new Option("Ceed Tourer", "Ceed Tourer"));
+					$("#modelo").append(new Option("Ceed Tourer Híbrido PHEV", "Ceed Tourer Híbrido PHEV"));
+					$("#modelo").append(new Option("e-Niro", "e-Niro"));
+					$("#modelo").append(new Option("e-Soul", "e-Soul"));
+					$("#modelo").append(new Option("Niro", "Niro"));
+					$("#modelo").append(new Option("Niro PHEV", "Niro PHEV"));
+					$("#modelo").append(new Option("Optima", "Optima"));
+					$("#modelo").append(new Option("Optima GT", "Optima GT"));
+					$("#modelo").append(new Option("Optima PHEV", "Optima PHEV"));
+					$("#modelo").append(new Option("Optima SW", "Optima SW"));
+					$("#modelo").append(new Option("Optima SW PHEV", "Optima SW PHEV"));
+					$("#modelo").append(new Option("Picanto", "Picanto"));
+					$("#modelo").append(new Option("ProCeed", "ProCeed"));
+					$("#modelo").append(new Option("Rio", "Rio"));
+					$("#modelo").append(new Option("Sorento", "Sorento"));
+					$("#modelo").append(new Option("Sorento HEV", "Sorento HEV"));
+					$("#modelo").append(new Option("Sportage", "Sportage"));
+					$("#modelo").append(new Option("Stinger", "Stinger"));
+					$("#modelo").append(new Option("Stonic", "Stonic"));
+					$("#modelo").append(new Option("XCeed", "XCeed"));
+					$("#modelo").append(new Option("XCeed Híbrido PHEV", "XCeed Híbrido PHEV"));
+          				break;
+				case "LAND ROVER":
+					
+					$("#modelo").append(new Option("Defender", "Defender"));
+					$("#modelo").append(new Option("Discovery", "Discovery"));
+					$("#modelo").append(new Option("Discovery Sport", "Discovery Sport"));
+					$("#modelo").append(new Option("Range Rover", "Range Rover"));
+					$("#modelo").append(new Option("Range Rover Evoque", "Range Rover Evoque"));
+					$("#modelo").append(new Option("Range Rover PHEV", "Range Rover PHEV"));
+					$("#modelo").append(new Option("Range Rover Sport", "Range Rover Sport"));
+					$("#modelo").append(new Option("Range Rover Velar", "Range Rover Velar"));
+					$("#modelo").append(new Option("Sport PHEV", "Sport PHEV"));
+          				break;
+				case "LEXUS":
+					
+					$("#modelo").append(new Option("CT", "CT"));
+					$("#modelo").append(new Option("ES", "ES"));
+					$("#modelo").append(new Option("IS", "IS"));
+					$("#modelo").append(new Option("LC", "LC"));
+					$("#modelo").append(new Option("LC Cabrio", "LC Cabrio"));
+					$("#modelo").append(new Option("LS", "LS"));
+					$("#modelo").append(new Option("NX", "NX"));
+					$("#modelo").append(new Option("RC", "RC"));
+					$("#modelo").append(new Option("RX", "RX"));
+					$("#modelo").append(new Option("RX L", "RX L"));
+					$("#modelo").append(new Option("UX", "UX"));
+					$("#modelo").append(new Option("UX 300e", "UX 300e"));					
+          				break;
+				case "MAHINDRA":
+					
+					$("#modelo").append(new Option("KUV100", "KUV100"));
+					$("#modelo").append(new Option("KUV100 NXT", "KUV100 NXT"));
+					$("#modelo").append(new Option("XUV500", "XUV500"));					
+          				break;
+				case "MASERATI":
+					
+					$("#modelo").append(new Option("Ghibli", "Ghibli"));
+					$("#modelo").append(new Option("Levante", "Levante"));
+					$("#modelo").append(new Option("Quattroporte", "Quattroporte"));
+					
+          				break;
+				case "MAZDA":
+					
+					$("#modelo").append(new Option("CX-3", "CX-3"));
+					$("#modelo").append(new Option("CX-30", "CX-30"));
+					$("#modelo").append(new Option("CX-5", "CX-5"));
+					$("#modelo").append(new Option("Mazda2", "Mazda2"));
+					$("#modelo").append(new Option("Mazda3", "Mazda3"));
+					$("#modelo").append(new Option("Mazda3 Sedan", "Mazda3 Sedan"));
+					$("#modelo").append(new Option("Mazda6", "Mazda6"));
+					$("#modelo").append(new Option("Mazda6 Sedan", "Mazda6 Sedan"));
+					$("#modelo").append(new Option("MX-5", "MX-5"));
+					$("#modelo").append(new Option("MX-5 RF", "MX-5 RF"));				
+          				break;
+				case "MERCEDES":
+					
+					$("#modelo").append(new Option("AMG GT Coupé", "AMG GT Coupé"));
+					$("#modelo").append(new Option("AMG GT Roadster", "AMG GT Roadster"));
+					$("#modelo").append(new Option("AMG-GT", "AMG-GT"));
+					$("#modelo").append(new Option("Citan", "Citan"));
+					$("#modelo").append(new Option("CLA", "CLA"));
+					$("#modelo").append(new Option("CLA Shooting Brake", "CLA Shooting Brake"));
+					$("#modelo").append(new Option("Clase A", "Clase A"));
+					$("#modelo").append(new Option("Clase A Compacto", "Clase A Compacto"));
+					$("#modelo").append(new Option("Clase A PHEV", "Clase A PHEV"));
+					$("#modelo").append(new Option("Clase A Sedán", "Clase A Sedán"));
+					$("#modelo").append(new Option("Clase B", "Clase B"));
+					$("#modelo").append(new Option("Clase B Sports Tourer", "Clase B Sports Tourer"));
+					$("#modelo").append(new Option("Clase C", "Clase C"));
+					$("#modelo").append(new Option("Clase C Berlina", "Clase C Berlina"));
+					$("#modelo").append(new Option("Clase C Cabrio", "Clase C Cabrio"));
+					$("#modelo").append(new Option("Clase C Coupé", "Clase C Coupé"));
+					$("#modelo").append(new Option("Clase C Estate", "Clase C Estate"));
+					$("#modelo").append(new Option("Clase E", "Clase E"));
+					$("#modelo").append(new Option("Clase E Berlina", "Clase E Berlina"));
+					$("#modelo").append(new Option("Clase E Cabrio", "Clase E Cabrio"));
+					$("#modelo").append(new Option("Clase E Coupé", "Clase E Coupé"));
+					$("#modelo").append(new Option("Clase E estate", "Clase E estate"));
+					$("#modelo").append(new Option("Clase G", "Clase G"));
+					$("#modelo").append(new Option("Clase G Todoterreno", "Clase G Todoterreno"));
+					$("#modelo").append(new Option("Clase GLC", "Clase GLC"));
+					$("#modelo").append(new Option("Clase GLE Coupé", "Clase GLE Coupé"));
+					$("#modelo").append(new Option("Clase S", "Clase S"));
+					$("#modelo").append(new Option("Clase S Berlina", "Clase S Berlina"));
+					$("#modelo").append(new Option("Clase S Cabrio", "Clase S Cabrio"));
+					$("#modelo").append(new Option("Clase S Coupé", "Clase S Coupé"));
+					$("#modelo").append(new Option("Clase SL", "Clase SL"));
+					$("#modelo").append(new Option("Clase SLC", "Clase SLC"));
+					$("#modelo").append(new Option("Clase V", "Clase V"));
+					$("#modelo").append(new Option("CLS", "CLS"));
+					$("#modelo").append(new Option("CLS Coupé", "CLS Coupé"));
+					$("#modelo").append(new Option("EQC", "EQC"));
+					$("#modelo").append(new Option("GLA", "GLA"));
+					$("#modelo").append(new Option("GLA SUV", "GLA SUV"));
+					$("#modelo").append(new Option("GLC Coupé", "GLC Coupé"));
+					$("#modelo").append(new Option("GLE", "GLE"));
+					$("#modelo").append(new Option("GLE Coupé", "GLE Coupé"));
+					$("#modelo").append(new Option("GLS", "GLS"));
+					$("#modelo").append(new Option("GLS SUV", "GLS SUV"));
+					$("#modelo").append(new Option("Mercedes-AMG GT", "Mercedes-AMG GT"));
+					$("#modelo").append(new Option("SLC Roadster", "SLC Roadster"));
+					$("#modelo").append(new Option("Vito", "Vito"));					
+          				break;
+				case "MINI":
+					
+					$("#modelo").append(new Option("3 puertas", "3 puertas"));
+					$("#modelo").append(new Option("5 Puertas", "5 Puertas"));
+					$("#modelo").append(new Option("CABRIO", "CABRIO"));
+					$("#modelo").append(new Option("CLUBMAN", "CLUBMAN"));
+					$("#modelo").append(new Option("COOPER SE", "COOPER SE"));
+					$("#modelo").append(new Option("COUNTRYMAN", "COUNTRYMAN"));
+					$("#modelo").append(new Option("MINI", "MINI"));					
+          				break;
+				case "MITSUBISHI":
+					
+					$("#modelo").append(new Option("Eclipse Cross", "Eclipse Cross"));
+					$("#modelo").append(new Option("L200", "L200"));
+					$("#modelo").append(new Option("Montero", "Montero"));
+					$("#modelo").append(new Option("Outlander", "Outlander"));
+					$("#modelo").append(new Option("Outlander PHEV", "Outlander PHEV"));
+					$("#modelo").append(new Option("Space Star", "Space Star"));					
+          				break;
+				case "NISSAN":
+					
+					$("#modelo").append(new Option("370Z", "370Z"));
+					$("#modelo").append(new Option("370Z Coupé", "370Z Coupé"));
+					$("#modelo").append(new Option("370Z Roadster", "370Z Roadster"));
+					$("#modelo").append(new Option("Ariya", "Ariya"));
+					$("#modelo").append(new Option("e-NV200", "e-NV200"));
+					$("#modelo").append(new Option("e-NV200 EVALIA", "e-NV200 EVALIA"));
+					$("#modelo").append(new Option("GT-R", "GT-R"));
+					$("#modelo").append(new Option("JUKE", "JUKE"));
+					$("#modelo").append(new Option("LEAF", "LEAF"));
+					$("#modelo").append(new Option("Micra", "Micra"));
+					$("#modelo").append(new Option("NAVARRA", "NAVARRA"));
+					$("#modelo").append(new Option("NV200 EVALIA", "NV200 EVALIA"));
+					$("#modelo").append(new Option("QASHQAI", "QASHQAI"));
+					$("#modelo").append(new Option("X-TRAIL", "X-TRAIL"));					
+          				break;
+				case "OPEL":
+					
+					$("#modelo").append(new Option("Adam", "Adam"));
+					$("#modelo").append(new Option("Astra", "Astra"));
+					$("#modelo").append(new Option("Astra 5 Puertas", "Astra 5 Puertas"));
+					$("#modelo").append(new Option("Astra Sports Tourer", "Astra Sports Tourer"));
+					$("#modelo").append(new Option("Cabrio", "Cabrio"));
+					$("#modelo").append(new Option("Combo Life", "Combo Life"));
+					$("#modelo").append(new Option("Corsa", "Corsa"));
+					$("#modelo").append(new Option("Corsa-e", "Corsa-e"));
+					$("#modelo").append(new Option("Crossland X", "Crossland X"));
+					$("#modelo").append(new Option("Grandland X", "Grandland X"));
+					$("#modelo").append(new Option("Grandland X Híbrido Enhufable", "Grandland X Híbrido Enhufable"));
+					$("#modelo").append(new Option("Grandland X PHEV", "Grandland X PHEV"));
+					$("#modelo").append(new Option("Insignia", "Insignia"));
+					$("#modelo").append(new Option("Insignia Country Tourer", "Insignia Country Tourer"));
+					$("#modelo").append(new Option("Insignia Grand Sport", "Insignia Grand Sport"));
+					$("#modelo").append(new Option("Insignia Sports Tourer", "Insignia Sports Tourer"));
+					$("#modelo").append(new Option("Karl", "Karl"));
+					$("#modelo").append(new Option("Mokka X", "Mokka X"));
+					$("#modelo").append(new Option("Mokka-e", "Mokka-e"));
+					$("#modelo").append(new Option("Vivaro", "Vivaro"));
+					$("#modelo").append(new Option("Zafira", "Zafira"));
+					$("#modelo").append(new Option("Zafira Life", "Zafira Life"));
+					
+          				break;
+				case "PEUGEOT":
+					
+					$("#modelo").append(new Option("108", "108"));
+					$("#modelo").append(new Option("108 top", "108 top"));
+					$("#modelo").append(new Option("2008", "2008"));
+					$("#modelo").append(new Option("208", "208"));
+					$("#modelo").append(new Option("3008", "3008"));
+					$("#modelo").append(new Option("308", "308"));
+					$("#modelo").append(new Option("308 sw", "308 sw"));
+					$("#modelo").append(new Option("5008", "5008"));
+					$("#modelo").append(new Option("508", "508"));
+					$("#modelo").append(new Option("508 sw", "508 sw"));
+					$("#modelo").append(new Option("e-2008", "e-2008"));
+					$("#modelo").append(new Option("e-208", "e-208"));
+					$("#modelo").append(new Option("ion", "ion"));
+					$("#modelo").append(new Option("Rifter", "Rifter"));
+					$("#modelo").append(new Option("Traveller", "Traveller"));					
+          				break;
+				case "PORSCHE":
+					
+					$("#modelo").append(new Option("718", "718"));
+					$("#modelo").append(new Option("911", "911"));
+					$("#modelo").append(new Option("Cayenne", "Cayenne"));
+					$("#modelo").append(new Option("Cayenne Coupé", "Cayenne Coupé"));
+					$("#modelo").append(new Option("Macan", "Macan"));
+					$("#modelo").append(new Option("Panamera", "Panamera"));
+					$("#modelo").append(new Option("Taycan", "Taycan"));					
+          				break;
+				case "RENAULT":
+					
+					$("#modelo").append(new Option("Captur", "Captur"));
+					$("#modelo").append(new Option("Clio", "Clio"));
+					$("#modelo").append(new Option("Espace", "Espace"));
+					$("#modelo").append(new Option("Grand Scénic", "Grand Scénic"));
+					$("#modelo").append(new Option("Kadjar", "Kadjar"));
+					$("#modelo").append(new Option("Koleos", "Koleos"));
+					$("#modelo").append(new Option("Mégane", "Mégane"));
+					$("#modelo").append(new Option("Mégane Sport Tourer", "Mégane Sport Tourer"));
+					$("#modelo").append(new Option("Scénic", "Scénic"));
+					$("#modelo").append(new Option("Talisman", "Talisman"));
+					$("#modelo").append(new Option("Talisman Sport Tourer", "Talisman Sport Tourer"));
+					$("#modelo").append(new Option("Trafic", "Trafic"));
+					$("#modelo").append(new Option("Trafic Combi", "Trafic Combi"));
+					$("#modelo").append(new Option("Twingo", "Twingo"));
+					$("#modelo").append(new Option("ZOE", "ZOE"));					
+          				break;
+				case "SEAT":
+					
+					$("#modelo").append(new Option("Alhambra", "Alhambra"));
+					$("#modelo").append(new Option("Arona", "Arona"));
+					$("#modelo").append(new Option("Ateca", "Ateca"));
+					$("#modelo").append(new Option("Cupra Ateca", "Cupra Ateca"));
+					$("#modelo").append(new Option("Ibiza", "Ibiza"));
+					$("#modelo").append(new Option("León", "León"));
+					$("#modelo").append(new Option("León eTSI", "León eTSI"));
+					$("#modelo").append(new Option("León ST", "León ST"));
+					$("#modelo").append(new Option("Mii", "Mii"));
+					$("#modelo").append(new Option("Tarraco", "Tarraco"));
+					$("#modelo").append(new Option("Toledo", "Toledo"));					
+          				break;
+				case "SKODA":
+					
+					$("#modelo").append(new Option("Citigo", "Citigo"));
+					$("#modelo").append(new Option("Enyaq iV", "Enyaq iV"));
+					$("#modelo").append(new Option("Fabia", "Fabia"));
+					$("#modelo").append(new Option("Fabia Combi", "Fabia Combi"));
+					$("#modelo").append(new Option("Kamiq", "Kamiq"));
+					$("#modelo").append(new Option("Karoq", "Karoq"));
+					$("#modelo").append(new Option("Kodiaq", "Kodiaq"));
+					$("#modelo").append(new Option("Octavia", "Octavia"));
+					$("#modelo").append(new Option("Octavia Combi", "Octavia Combi"));
+					$("#modelo").append(new Option("Scala", "Scala"));
+					$("#modelo").append(new Option("Scout", "Scout"));
+					$("#modelo").append(new Option("Superb", "Superb"));
+					$("#modelo").append(new Option("Superb Combi", "Superb Combi"));					
+          				break;
+				case "SMART":
+					
+					$("#modelo").append(new Option("Forfour", "Forfour"));
+					$("#modelo").append(new Option("Fortwo", "Fortwo"));					
+          				break;
+				case "SSANGYONG":
+					
+					$("#modelo").append(new Option("Korando", "Korando"));
+					$("#modelo").append(new Option("Rexton", "Rexton"));
+					$("#modelo").append(new Option("Rodius", "Rodius"));
+					$("#modelo").append(new Option("Tivoli", "Tivoli"));
+					$("#modelo").append(new Option("XLV", "XLV"));					
+          				break;
+				case "SUBARU":
+					
+					$("#modelo").append(new Option("BRZ", "BRZ"));
+					$("#modelo").append(new Option("Forester", "Forester"));
+					$("#modelo").append(new Option("Impreza", "Impreza"));
+					$("#modelo").append(new Option("Levorg", "Levorg"));
+					$("#modelo").append(new Option("Outback", "Outback"));
+					$("#modelo").append(new Option("XV", "XV"));					
+          				break;
+				case "SUZUKI":
+					
+					$("#modelo").append(new Option("Baleno", "Baleno"));
+					$("#modelo").append(new Option("Celerio", "Celerio"));
+					$("#modelo").append(new Option("Ignis", "Ignis"));
+					$("#modelo").append(new Option("Jimny", "Jimny"));
+					$("#modelo").append(new Option("S-Cross", "S-Cross"));
+					$("#modelo").append(new Option("Swift", "Swift"));
+					$("#modelo").append(new Option("Swift Sport", "Swift Sport"));
+					$("#modelo").append(new Option("Vitara", "Vitara"));
+					$("#modelo").append(new Option("Vitara Toro", "Vitara Toro"));					
+          				break;
+				case "TESLA":
+					
+					$("#modelo").append(new Option("Model 3", "Model 3"));
+					$("#modelo").append(new Option("Model S", "Model S"));
+					$("#modelo").append(new Option("Model X", "Model X"));
+					$("#modelo").append(new Option("Model Y", "Model Y"));
+          				break;
+				case "TOYOTA":
+					
+					$("#modelo").append(new Option("Auris", "Auris"));
+					$("#modelo").append(new Option("Aygo", "Aygo"));
+					$("#modelo").append(new Option("Camry", "Camry"));
+					$("#modelo").append(new Option("C-HR", "C-HR"));
+					$("#modelo").append(new Option("Corolla", "Corolla"));
+					$("#modelo").append(new Option("Corolla Sedan", "Corolla Sedan"));
+					$("#modelo").append(new Option("Corolla Touring Sports", "Corolla Touring Sports"));
+					$("#modelo").append(new Option("GT86", "GT86"));
+					$("#modelo").append(new Option("Highlander", "Highlander"));
+					$("#modelo").append(new Option("Hilux", "Hilux"));
+					$("#modelo").append(new Option("Land Cruiser", "Land Cruiser"));
+					$("#modelo").append(new Option("Mirai", "Mirai"));
+					$("#modelo").append(new Option("Prius", "Prius"));
+					$("#modelo").append(new Option("Prius+", "Prius+"));
+					$("#modelo").append(new Option("Proace", "Proace"));
+					$("#modelo").append(new Option("Proace City", "Proace City"));
+					$("#modelo").append(new Option("Proace City Verso", "Proace City Verso"));
+					$("#modelo").append(new Option("Proace Verso", "Proace Verso"));
+					$("#modelo").append(new Option("Rav4", "Rav4"));
+					$("#modelo").append(new Option("Supra", "Supra"));
+					$("#modelo").append(new Option("Yaris", "Yaris"));					
+          				break;
+				case "VOLKSWAGEN":
+					
+					$("#modelo").append(new Option("Aerton Elegance", "Aerton Elegance"));
+					$("#modelo").append(new Option("Aerton R-Line", "Aerton R-Line"));
+					$("#modelo").append(new Option("Arteon", "Arteon"));
+					$("#modelo").append(new Option("Caddy", "Caddy"));
+					$("#modelo").append(new Option("California", "California"));
+					$("#modelo").append(new Option("Caravelle", "Caravelle"));
+					$("#modelo").append(new Option("E-Golf", "E-Golf"));
+					$("#modelo").append(new Option("Golf", "Golf"));
+					$("#modelo").append(new Option("Golf GTD", "Golf GTD"));
+					$("#modelo").append(new Option("Golf GTE", "Golf GTE"));
+					$("#modelo").append(new Option("Golf GTI", "Golf GTI"));
+					$("#modelo").append(new Option("Golf R", "Golf R"));
+					$("#modelo").append(new Option("Golf Sportsvan", "Golf Sportsvan"));
+					$("#modelo").append(new Option("Golf variant", "Golf variant"));
+					$("#modelo").append(new Option("Golf variant GTD", "Golf variant GTD"));
+					$("#modelo").append(new Option("Golf variant R", "Golf variant R"));
+					$("#modelo").append(new Option("Grand California", "Grand California"));
+					$("#modelo").append(new Option("Multivan", "Multivan"));
+					$("#modelo").append(new Option("Passat", "Passat"));
+					$("#modelo").append(new Option("Passat all-track", "Passat all-track"));
+					$("#modelo").append(new Option("Passat GTE", "Passat GTE"));
+					$("#modelo").append(new Option("Passat variant", "Passat variant"));
+					$("#modelo").append(new Option("Passat Variant GTE", "Passat Variant GTE"));
+					$("#modelo").append(new Option("Polo", "Polo"));
+					$("#modelo").append(new Option("Polo GTI", "Polo GTI"));
+					$("#modelo").append(new Option("Scirocco", "Scirocco"));
+					$("#modelo").append(new Option("Sharan", "Sharan"));
+					$("#modelo").append(new Option("T-Cross", "T-Cross"));
+					$("#modelo").append(new Option("Tiguan", "Tiguan"));
+					$("#modelo").append(new Option("Tiguan Allspace", "Tiguan Allspace"));
+					$("#modelo").append(new Option("Tiguan offroad", "Tiguan offroad"));
+					$("#modelo").append(new Option("Touareg", "Touareg"));
+					$("#modelo").append(new Option("Touran", "Touran"));
+					$("#modelo").append(new Option("T-Roc", "T-Roc"));
+					$("#modelo").append(new Option("up!", "up!"));					
+          				break;
+				case "VOLVO":
+					
+					$("#modelo").append(new Option("S60", "S60"));
+					$("#modelo").append(new Option("S90", "S90"));
+					$("#modelo").append(new Option("V40", "V40"));
+					$("#modelo").append(new Option("V40 Cross Country", "V40 Cross Country"));
+					$("#modelo").append(new Option("V60", "V60"));
+					$("#modelo").append(new Option("V60 Cross Country", "V60 Cross Country"));
+					$("#modelo").append(new Option("V90", "V90"));
+					$("#modelo").append(new Option("V90 Cross Country", "V90 Cross Country"));
+					$("#modelo").append(new Option("XC40", "XC40"));
+					$("#modelo").append(new Option("XC60", "XC60"));
+					$("#modelo").append(new Option("XC90", "XC90"));					
+          				break;
+
+	}
+		
 	//selectores dinámicos por marcas
 	$(document).ready(function() {
-		$( "#marca" ).change(function() {
+		$( "#marca" ).change(function(){
+			cambiar_marca($('#marca').val());
+		}
+		/*$( "#marca" ).change(function() {
 			switch($('#marca').val()) {
 				case "ABARTH":
 					var modelo = document.getElementById("modelo");
@@ -1109,7 +1805,7 @@
           				$("#modelo").append(new Option("Zoe", "Zoe"));
           				break;*/
 			}
-		});
+		});*/
 	});
 </script>
 
