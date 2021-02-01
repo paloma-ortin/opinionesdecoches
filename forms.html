@@ -1066,10 +1066,10 @@ const msfController = {
       });
 
       requiredRadios.forEach((el) => {
-        const radio = el.parentNode.querySelector(".w-radio-input");
-        const radioGroup = el.getAttribute("name");
+        const radio = el.parentNode.qerySelector(".w-radio-input");
+       const radioGroup = el.getAttribute("name");
         const isChecked = document.querySelector(
-          `input[name="${radioGroup}"]:checked`
+          `input[name="$radioGroup}"]:checked`
         );
 
         if (isChecked) {
@@ -1102,7 +1102,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 32");
+		//alert("edit 32");
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
