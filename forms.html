@@ -1017,6 +1017,10 @@ const msfController = {
         msf.setMaskHeight();
         //msf.setNextButtonText();
         msf.hideAlert();
+	// en el primer paso, vuelve a cargar los modelos
+	if (previousStep === 0){
+		console.log("vuelvo al 1");
+		cambiar_modelos($('#marca').val());
       }
     };
 
@@ -1098,7 +1102,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		//alert("edit 30")
+		alert("edit 31")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
