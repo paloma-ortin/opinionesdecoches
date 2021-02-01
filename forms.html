@@ -23,21 +23,18 @@
 </script>
 
 <script>
-	// cambiar los datos del form en función de la URL
+	//-------- cambia los datos del form en función de la URL ---------
 	// coge los valores de la URL
 	var url = new URL(document.location);
 	var params = url.searchParams;
 	var marca_url = params.get("marca");
 
-	console.log(url);
-	console.log(params);
-	console.log(marca_url);
 	// pon el valor de la marca en el campo "marca"
  	$("#marca").val(marca_url);
 	// añade los modelos de esa marca
 	cambiar_modelos(marca_url);
 	
-	//selectores dinámicos por marcas
+	//-------- selectores dinámicos por marcas ------------------
 	$(document).ready(function() {
 		$( "#marca" ).change(function(){
 			cambiar_modelos($('#marca').val());
@@ -47,7 +44,6 @@
 	
 	
 	function cambiar_modelos(marca){
-		console.log("entra en la función")
 		var modelo = document.getElementById("modelo");
 		//borra las opciones anteriores
 		var length = modelo.options.length;
