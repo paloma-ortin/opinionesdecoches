@@ -30,7 +30,7 @@
 		$( "#marca" ).change(function(){
 			console.log($('#marca').val());
 			cambiar_marca($('#marca').val());
-		}
+		});
 		/*$( "#marca" ).change(function() {
 			switch($('#marca').val()) {
 				case "ABARTH":
@@ -2010,7 +2010,6 @@ const msfController = {
     };
 
     const setEventListeners = () => {
-	    // cuando se haga click en el tercer paso
 	   	    
 	    msf.next1.addEventListener("click", nextClick);
 	    msf.next2.addEventListener("click", nextClick);
@@ -2019,7 +2018,7 @@ const msfController = {
       
 	    msf.back2.addEventListener("click", backClick);
 	    msf.back3.addEventListener("click", backClick);
-	    msf.back4.addEventListener("click", backClick);
+	    //msf.back4.addEventListener("click", backClick);
 	    //-----------------------------------------
 	    
 	    
@@ -2173,7 +2172,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		alert("edit 26")
+		alert("edit 27")
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
