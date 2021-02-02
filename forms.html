@@ -753,7 +753,7 @@
 class MSF {
   constructor(data) {
     this.currentStep = 0;
-    this.form_sent = false;
+    this.form_sent = 0;
     this.form = document.getElementById(data.formID);
     // editar en función del número de pasos
     // estos botones incluyen el del último paso
@@ -844,9 +844,9 @@ class MSF {
 		  }
 	  });
 	if(index===2){
-		if(msf.form_sent === false){
+		if(this.form_sent === 0){
 			this.hiddenSubmitButton.click();
-			msf.form_sent = true;
+			this.form_sent = 1;
 		}
 	}
   }
@@ -1107,7 +1107,7 @@ const msfController = {
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
-		//alert("edit 32");
+		alert("edit 33");
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
