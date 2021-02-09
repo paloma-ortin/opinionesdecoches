@@ -835,9 +835,11 @@ class MSF {
 	  console.log(x);
 	  if(x == true){
 		this.submitButton.click(function(){
-			setTimeout(function() {
+			alert("post click")
+			location.href = "/gracias";
+			/*setTimeout(function() {
   				location.href = '/gracias';
-			},200);
+			},200);*/
 		});
 	  	
 	  }else{
@@ -1123,7 +1125,7 @@ const msfController = {
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
 		//alert("edit 33");
-		console.log("edit 7");
+		console.log("edit 8");
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
