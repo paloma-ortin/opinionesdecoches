@@ -834,7 +834,7 @@ class MSF {
 	  var x = document.getElementById("ofertas").checked;
 	  console.log(x);
 	  if(x == true){
-		this.form.submit(function(){
+		this.submitButton.click(function(){
 			setTimeout(function() {
   				location.href = '/gracias';
 			},200);
@@ -1123,7 +1123,7 @@ const msfController = {
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
 		//alert("edit 33");
-		console.log("edit 6");
+		console.log("edit 7");
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
