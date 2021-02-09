@@ -830,15 +830,21 @@ class MSF {
   }
 
   submitForm() {
-	  this.submitButton.click();
 	  //mira el valor de la oferta; si no ha pedido oferta, llévale a la página "Gracias"
 	  var x = document.getElementById("ofertas").checked;
 	  console.log(x);
 	  if(x == true){
-	  	setTimeout(function() {
-  			location.href = '/gracias';
-		},200);
+		this.form.submit(function(){
+			setTimeout(function() {
+  				location.href = '/gracias';
+			},200);
+		});
+	  	
+	  }else{
+	  	this.submitButton.click();
 	  }
+	  
+	  
 		  
   }
 
@@ -1117,7 +1123,7 @@ const msfController = {
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
 		//alert("edit 33");
-		console.log("edit 4");
+		console.log("edit 5");
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
