@@ -834,10 +834,10 @@ class MSF {
 	  //mira el valor de la oferta; si no ha pedido oferta, llévale a la página "Gracias"
 	  var x = document.getElementById("ofertas").checked;
 	  console.log(x);
-	  if(x == true){
+	  /*if(x == true){
 	  	$(document).ajaxComplete(function(){
   			location.href = '/gracias';
-		});
+		});*/
 	  }
 		  
   }
@@ -1117,6 +1117,7 @@ const msfController = {
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
 		//alert("edit 33");
+		console.log("edit 1");
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
