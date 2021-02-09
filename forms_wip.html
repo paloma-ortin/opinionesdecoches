@@ -835,9 +835,9 @@ class MSF {
 	  var x = document.getElementById("ofertas").checked;
 	  console.log(x);
 	  if(x == true){
-	  	$(document).ajaxComplete(function(){
+	  	setTimeout(function() {
   			location.href = '/gracias';
-		});
+		},200);
 	  }
 		  
   }
