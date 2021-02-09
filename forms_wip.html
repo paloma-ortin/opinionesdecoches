@@ -831,7 +831,7 @@ class MSF {
 
   submitForm() {
 	  //mira el valor de la oferta; si no ha pedido oferta, llévale a la página "Gracias"
-	  var x = document.getElementById("ofertas").checked;
+	 /* var x = document.getElementById("ofertas").checked;
 	  console.log(x);
 	  if(x == true){
 		this.submitButton.click(function(){
@@ -840,13 +840,13 @@ class MSF {
 			location.href = "https://www.opinionesdecoches.com/gracias";
 			/*setTimeout(function() {
   				location.href = '/gracias';
-			},200);*/
+			},200);
 		});
 	  	
 	  }else{
 	  	this.submitButton.click();
-	  }
-	  
+	  }*/
+	this.submitButton.click();  
 	  
 		  
   }
@@ -1126,7 +1126,7 @@ const msfController = {
 	var Webflow = Webflow || [];
 	Webflow.push(function () {
 		//alert("edit 33");
-		console.log("edit 9");
+		console.log("edit 10");
 		let msfData = new MSF({
 			formID: "form-generico",
 			nextButtonID1: "next1",
