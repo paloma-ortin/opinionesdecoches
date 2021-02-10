@@ -24,15 +24,17 @@
 
 <script>
 	//-------- cambia los datos del form en función de la URL ---------
-	// coge los valores de la URL
 	var url = new URL(document.location);
 	var params = url.searchParams;
 	var marca_url = params.get("marca");
+	var modelo_url = params.get("modelo");
 
 	// pon el valor de la marca en el campo "marca"
  	$("#marca").val(marca_url);
 	// añade los modelos de esa marca
 	cambiar_modelos(marca_url);
+	// pon el valor del modelo en el campo "modelo"
+ 	$("#modelo").val(modelo_url);
 	
 	//-------- selectores dinámicos por marcas ------------------
 	$(document).ready(function() {
