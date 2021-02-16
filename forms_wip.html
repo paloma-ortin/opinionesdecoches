@@ -24,7 +24,6 @@
 
 <script>
 	//-------- cambia los datos del form en función de la URL ---------
-	// coge los valores de la URL
 	var url = new URL(document.location);
 	var params = url.searchParams;
 	var marca_url = params.get("marca");
@@ -199,6 +198,7 @@
 					$("#modelo").append(new Option("C5 Aircross", "C5 Aircross"));
 					$("#modelo").append(new Option("C-Elysée", "C-Elysée"));
 					$("#modelo").append(new Option("C-Zero", "C-Zero"));
+					$("#modelo").append(new Option("Ë-C4", "E-C4"));
 					$("#modelo").append(new Option("E-Mehari", "E-Mehari"));
 					$("#modelo").append(new Option("Grand C4 Spacetourer", "Grand C4 Spacetourer"));
 					$("#modelo").append(new Option("Spacetourer", "Spacetourer"));
@@ -493,6 +493,7 @@
           				break;
 				case "MITSUBISHI":
 					
+					$("#modelo").append(new Option("ASX", "ASX"));
 					$("#modelo").append(new Option("Eclipse Cross", "Eclipse Cross"));
 					$("#modelo").append(new Option("L200", "L200"));
 					$("#modelo").append(new Option("Montero", "Montero"));
@@ -527,15 +528,16 @@
 					$("#modelo").append(new Option("Combo Life", "Combo Life"));
 					$("#modelo").append(new Option("Corsa", "Corsa"));
 					$("#modelo").append(new Option("Corsa-e", "Corsa-e"));
+					$("#modelo").append(new Option("Crossland", "Crossland"));
 					$("#modelo").append(new Option("Crossland X", "Crossland X"));
 					$("#modelo").append(new Option("Grandland X", "Grandland X"));
-					$("#modelo").append(new Option("Grandland X Híbrido Enhufable", "Grandland X Híbrido Enhufable"));
 					$("#modelo").append(new Option("Grandland X PHEV", "Grandland X PHEV"));
 					$("#modelo").append(new Option("Insignia", "Insignia"));
 					$("#modelo").append(new Option("Insignia Country Tourer", "Insignia Country Tourer"));
 					$("#modelo").append(new Option("Insignia Grand Sport", "Insignia Grand Sport"));
 					$("#modelo").append(new Option("Insignia Sports Tourer", "Insignia Sports Tourer"));
 					$("#modelo").append(new Option("Karl", "Karl"));
+					$("#modelo").append(new Option("Mokka", "Mokka"));
 					$("#modelo").append(new Option("Mokka X", "Mokka X"));
 					$("#modelo").append(new Option("Mokka-e", "Mokka-e"));
 					$("#modelo").append(new Option("Vivaro", "Vivaro"));
@@ -994,7 +996,6 @@ const msfController = {
 	  
 	  /*const nextClick3 = () => {
       		const filledFields = checkRequiredInputs(msf.currentStep);
-
       		if (filledFields) {
        			 msf.setConfirmValues(msf.currentStep);
 			 // esto es lo único diferente con nextClick
