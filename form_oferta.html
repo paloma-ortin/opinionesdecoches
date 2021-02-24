@@ -23,7 +23,9 @@
 	
 	//-------- selectores dinámicos por marcas ------------------
 	$(document).ready(function() {
-		$( "#marca" ).change(function(){
+		console.log("OK");
+		$("#marca").change(function(){
+			console.log($('#marca').val());
 			cambiar_modelos($('#marca').val());
 		});
 		
@@ -37,7 +39,7 @@
 		for (i = length-1; i >= 0; i--) {
 			modelo.options[i] = null;
 		}
-		$("#modelo").append(new Option("Elige un modelo", ""));
+		$("#modelo").append(new Option("Modelo", ""));
 		$("#modelo").children('option:first').attr("disabled", "disabled");
 		// añade las opciones
 		switch(marca) {
