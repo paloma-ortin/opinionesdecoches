@@ -1,7 +1,6 @@
 !--para evitar que los dropdowns de los forms tengan una opción por defecto-->
 <script>
   $( document ).ready(function() {
-     alert("Hello world");
      $('.input').each( function () {
         $(this).children('option:first').attr("disabled", "disabled");
       });
@@ -24,9 +23,7 @@
 	
 	//-------- selectores dinámicos por marcas ------------------
 	$(document).ready(function() {
-		console.log("OK");
 		$("#marca").change(function(){
-			console.log($('#marca').val());
 			cambiar_modelos($('#marca').val());
 		});
 		
