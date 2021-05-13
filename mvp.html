@@ -20,15 +20,15 @@
   
   	$('#url').val(url);
   	$('#marca').val(marca_url);
+	cambiar_modelos(marca_url);
   	$("#modelo").val(modelo_url);
   	$("#token").val(id_url);
   	$("#fuente").val(fuente_url);
 	
 	//-------- selectores dinámicos por marcas ------------------
 	$(document).ready(function() {
-		console.log("ready");
+		console.log("ready 2");
 		$("#marca").change(function(){
-			console.log("cambio modelo");
 			cambiar_modelos($('#marca').val());
 		});
 		
