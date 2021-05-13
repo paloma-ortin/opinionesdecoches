@@ -25,16 +25,16 @@
   	$("#token").val(id_url);
   	$("#fuente").val(fuente_url);
 	
-	if(marca.value != ""){
-		marca.style.display = "none";	
+	if(marca.value == ""){
+		marca.style.display = "block";	
 	}
-	if(modelo.value != ""){
-		modelo.style.display = "none";	
+	if(modelo.value == ""){
+		modelo.style.display = "block";	
 	}
 	
 	//-------- selectores dinámicos por marcas ------------------
 	$(document).ready(function() {
-		console.log("ready 3");
+		console.log("ready 4");
 		$("#marca").change(function(){
 			cambiar_modelos($('#marca').val());
 		});
